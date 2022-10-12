@@ -180,7 +180,7 @@ h1, h2{
 }
 @media (min-width: 600px){
     #game-card-btn{
-        padding: 5px 50;
+        padding: 5px 50px;
     }
 }
 @media (min-width: 600px){
@@ -246,8 +246,9 @@ footer address, ul, .copyright{
 .about{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    
     align-items: center;
+    text-align: center
 }
 
 .about-img, .about-image img{
@@ -275,7 +276,7 @@ hr{
     line-height: 150%;
     font-size: 1rem;
     margin: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 
@@ -285,6 +286,10 @@ form{
     flex-direction: column;
     align-items: center;
     margin: 20px;
+}
+
+.form-input{
+    padding: 5px;
 }
 fieldset{
     padding: 10px;
@@ -302,11 +307,27 @@ fieldset label{
 }
 .contact-btn{
     text-transform: uppercase;
-    padding: 10px 90px;
-}
-.form-input{
     padding: 5px;
+    text-align: center;
+    margin: 0px;
+    margin-top: 15px;
+    border-radius: 0px;
 }
+.contact-btn:active{
+    background-color: #0FA958
+}
+.contact-info{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+}
+.email-info{
+    border: 1px solid #BE9C37;
+}
+.phone-info{
+    border: 1px solid #BE9C37;
+}
+
 
 /* Details and cart */
 .details-section, .cart-section{
@@ -346,31 +367,28 @@ fieldset label{
 
 
 /*Checkout */
-
+.checkout{
+    min-width: 250px;
+    text-align: left;
+    border:0px
+}
 .checkout-btn2{
     background-color: white;
-    color: blue
+    color:  #00457C
 }
-.btn-checkout-container{
-    display: flex;
-    flex-direction: column;
-    width: 260px;
+.checkout a{
+    text-align: center;
+    padding: 5px;
+    margin: 0px;
+    margin-top: 20px;
+    border-radius: 0px;
 }
-.checkout{
-    width: 260px;
-    border: none;
-}
-.checkout-main h2{
+
+.checkout-main h2,.checkout-page {
     text-align: center;
     margin-top: 20px;
-}
-.checkout-page{
     background: none;
     background-color: #0C1014;
-}
-.checkout-btn2, .checkout-btn{
-    text-align: center;
-    border-radius: 0px;
 }
 #total-text{
     text-transform: uppercase;
@@ -394,9 +412,7 @@ fieldset label{
 .summary-text2{
     text-align: right;
 }
-.checkout-input{
-    padding: 10px;
-}
+
 /*success*/
 
 .success-container{
@@ -416,3 +432,4 @@ fieldset label{
 .success-img img{
     max-width: 200px;
 }
+
