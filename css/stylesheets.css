@@ -63,7 +63,7 @@ nav a{
 }
 
 nav :hover{
-    color: #B18E35;
+    color: #BE9C37;
 }
 
 #logo{
@@ -80,7 +80,7 @@ nav :hover{
     -o-transform: scale(0.99);
 }
 .active{
-    color: #B18E35;
+    color: #BE9C37
 }
 
  @media (min-width: 695px){
@@ -129,7 +129,7 @@ h1, h2{
 }
 .game-card{
     background:#0C1014;
-    border: 1.5px solid #B18E35;
+    border: 1.5px solid #BE9C37;
     border-radius: 5px;
     text-align: center;
     
@@ -147,7 +147,7 @@ h1, h2{
     border-radius: 5px;
 }
 #price{
-    color: #B18E35;
+    color: #BE9C37;
 }
 .button-container{
     display: flex;
@@ -160,7 +160,7 @@ h1, h2{
     cursor: pointer;
     text-decoration: none;
     border:none;
-    background-color:#B18E35;
+    background-color:#BE9C37;
     padding: 10px 50px;
     border-radius: 5px;
     font-weight: bold;
@@ -268,7 +268,7 @@ hr{
     margin: 10px auto;
     border: none;
     height: 5px;
-    background: radial-gradient(50% 50% at 50% 50%, #B18E35 0%, rgba(152, 117, 28, 0) 100%);
+    background: radial-gradient(50% 50% at 50% 50%, #BE9C37 0%, rgba(152, 117, 28, 0) 100%);
 }
 
 .about-text{
@@ -293,7 +293,7 @@ fieldset{
     flex-direction: column;
     line-height: 150%;
     background-color: #0C1014;
-    border: 2px solid #B18E35;
+    border: 2px solid #BE9C37;
     border-radius: 5px;
 }
 fieldset label{
@@ -324,7 +324,7 @@ fieldset label{
 }
 .cart-container, .details-container{
     text-align: center;
-    border: 1px solid #B18E35;
+    border: 1px solid #BE9C37;
     background-color: #0C1014;
     border-radius: 5px;
 }
