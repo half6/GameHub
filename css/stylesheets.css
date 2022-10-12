@@ -140,7 +140,7 @@ h1, h2{
     padding-left: 8px;
 }
 
-.img{
+.game-cover-img{
     margin-top: 10px;
     background-size:cover;
     max-width: 120px;
@@ -173,6 +173,27 @@ h1, h2{
 #game-card-btn{
     padding: 5px 30px;
 }
+@media (min-width: 350px){
+    #game-card-btn{
+        padding: 5px 45px;
+    }
+}
+@media (min-width: 600px){
+    #game-card-btn{
+        padding: 5px 50;
+    }
+}
+@media (min-width: 600px){
+    .game-section{
+        gap:15px;
+    }
+    .game-cover-img{
+        margin-top: 10px;
+        background-size:cover;
+        max-width: 130px;
+        border-radius: 5px;
+    }   
+}
 .btn:active{
     transform: scale(0.99);
 }
@@ -196,31 +217,9 @@ footer address, ul, .copyright{
         justify-content: space-around;
         align-items: center;
         padding: 0px;
-        }
-    .game-section{
-        gap:15px;
     }
-    #game-card-btn{
-        padding: 5px 50px;
-    }
-    .img{
-        margin-top: 10px;
-        background-size:cover;
-        max-width: 130px;
-        border-radius: 5px;
-    }   
-}
-@media (min-width: 350px){
-    #game-card-btn{
-        padding: 5px 45px;
-    }
-}
-@media (min-width: 400px){
-    #game-card-btn{
-        padding: 5px 50px;
-    }
-}
 
+}
 #connected{
     margin: 10px;
     padding: 0px 2.5px;
