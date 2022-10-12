@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="css/stylesheets.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7cc6ea881f.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="menu-checkbox" />
+        <label for="menu-checkbox" class="hamburger-icon"><i class="fa-solid fa-bars fa-xl"></i></label>
+        <a href="index.html"><img id="logo" src="images/gamehub.png" alt="logo"></a>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="store.html">Store</a>
+          <a href="about.html">About</a>
+          <a href="contact.html" class="active">Contact</a>
+        </nav>
+        <a href="cart.html" id="cart-icon"><i class="fa-solid fa-cart-shopping fa-xl cart-icon"></i></a>
+      </header>
+    <main>
+        <form>
+            <h2>Contact us</h2>
+            <fieldset>
+                <label for="name">Name</label>
+                <input type="text" required name="name" class="form-input" />
+                <label for="email">Email</label>
+                <input type="email" required name="email" class="form-input" />
+                <label for="phone">Phone number</label>
+                <input type="tel" required name="phone" class="form-input" />
+                <label for="subject">Subject</label>
+                <input type="text" required name="subject" class="form-input" />
+                <label for="message">Message</label>
+                <textarea required rows="5" cols="30" name="message" class="form-input"></textarea>
+            </fieldset>
+            <input type="submit" class="btn contact-btn" value="send">
+        </form>
+    </main>
+    <footer>
+        <ul class="socials">
+            <p id="connected">Stay connected</p>
+            <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook fa-xl"></i></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
+            </li>
+            <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube fa-xl"></i></a></li>
+        </ul>
+        <p class="copyright">Copyright Ⓒ Game Hub: 2022: All rights reserved</p>
+        <address class="address">
+            <p>Address</p> 
+            <p>TheAddress25</p>
+            <p>0255 Oslo</p>
+            </address>
+        </address>
+    </footer>
+</body>
+</html>
