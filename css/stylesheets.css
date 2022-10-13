@@ -53,18 +53,24 @@ nav a{
     display: block;
     color:white;
     padding: 10px 20px;
-    
+    transition-property: color;
+    transition-duration: 0.3s;
+}
+nav a:hover{
+    color: #BE9C37;
 }
 .cart-icon{
     padding: 10px;
+    transition-property: color;
+    transition-duration: 0.3s;
+}
+.cart-icon:hover{
+    color: #BE9C37;
 }
 .hamburger-icon{
     padding: 10px;
 }
 
-nav :hover{
-    color: #BE9C37;
-}
 
 #logo{
     cursor: pointer;
@@ -74,10 +80,6 @@ nav :hover{
 
 #logo:active{
     transform: scale(0.99);
-    -webkit-transform: scale(0.99);
-    -moz-transform: scale(0.99);
-    -ms-transform: scale(0.99);
-    -o-transform: scale(0.99);
 }
 .active{
     color: #BE9C37
@@ -134,6 +136,10 @@ h1, h2{
     text-align: center;
     
 }
+.game-card:hover{
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
 .game-card p{
     text-align: left;
     padding: 5px;
@@ -169,6 +175,9 @@ h1, h2{
     margin: 10px;
     display: block;   
 }
+.btn:active{
+    transform: scale(0.99);
+}
 
 #game-card-btn{
     padding: 5px 30px;
@@ -194,13 +203,8 @@ h1, h2{
         border-radius: 5px;
     }   
 }
-.btn:active{
-    transform: scale(0.99);
-}
 
-#cart-icon:hover{
-    color: #B18E35;
-}
+
 footer{
     display: block;
     text-align: center;
