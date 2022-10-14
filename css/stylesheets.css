@@ -333,7 +333,7 @@ fieldset label{
 }
 .location{
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     margin-top: 10px;
 } 
 .location-info{
@@ -345,7 +345,6 @@ fieldset label{
     min-width: 295px;
     min-height:85px;
     margin-bottom: 50px;
-   
 }
 
 /* Details and cart */
