@@ -333,9 +333,8 @@ fieldset label{
     color: #BE9C37;
 }
 .location{
-    display: flex;
-    justify-content: center; 
-    margin-top: 10px;
+
+  
 } 
 .location-info{
     background: #0C1014;
@@ -343,10 +342,10 @@ fieldset label{
     border: 2px solid #BE9C37;
     border-radius: 5px;
     line-height: 150%;
-    min-width: 295px;
-    min-height:85px;
-    margin-bottom: 50px;
-}
+    width: 295px;
+    height:85px;
+    margin:10px auto;
+    }
 
 /* Details and cart */
 .details-section, .cart-section{
