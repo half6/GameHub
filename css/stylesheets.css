@@ -155,6 +155,16 @@ h1, h2{
 #price{
     color: #BE9C37;
 }
+#game-title{
+    font-weight: bold;
+}
+
+#store-text:active{
+    color: #B18E35;
+}
+.sold-by-users{
+    margin-bottom: 15px;
+}
 .button-container{
     display: flex;
     align-items: center;
@@ -204,7 +214,7 @@ h1, h2{
     }   
 }
 
-
+/* Footer */
 footer{
     display: block;
     text-align: center;
@@ -212,9 +222,19 @@ footer{
     line-height: 150%;
     margin-top: auto;
 }
+
 footer address, ul, .copyright{
     padding:15px;
+    font-style: normal;
 }
+.socials{
+    text-align: center;
+}
+.socials li{
+    display: inline-block;
+    padding: 10px 10px;
+}
+
 @media (min-width: 600px){
     footer{
         display: flex;
@@ -223,27 +243,6 @@ footer address, ul, .copyright{
         padding: 0px;
     }
 
-}
-#connected{
-    margin: 10px;
-    padding: 0px 2.5px;
-}
-
-.socials li{
-    display: inline-block;
-    padding: 0px 10px;
-    
-}
-
-#title{
-    font-weight: bold;
-}
-
-#store-text:active{
-    color: #B18E35;
-}
-.sold-by-users{
-    margin-bottom: 15px;
 }
 /* About */
 
@@ -262,12 +261,6 @@ footer address, ul, .copyright{
     border-radius: 50%;
     margin: 10px;
 }
-.store{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 hr{
     width: 40%;
     margin: 10px auto;
@@ -290,7 +283,6 @@ form{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
 }
 
 .form-input{
@@ -324,15 +316,36 @@ fieldset label{
 .contact-info{
     display: flex;
     justify-content: center;
-    gap:10px;
+    gap:5px;
 }
-.email-info{
-    border: 1px solid #BE9C37;
+.email-info, .phone-info{
+    text-align: center;
+    border: 2px solid #BE9C37;
+    min-height: 65px;
+    min-width: 145px;
+    border-radius: 5px;
+    line-height: 150%;
+    background: #0C1014;
 }
-.phone-info{
-    border: 1px solid #BE9C37;
+.fa-phone, .fa-envelope, .fa-location-dot{
+    margin-top: 16px;
+    color: #BE9C37;
 }
-
+.location{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.location-info{
+    background: #0C1014;
+    text-align: center;
+    border: 2px solid #BE9C37;
+    border-radius: 5px;
+    line-height: 150%;
+    min-width: 295px;
+    min-height:85px;
+    margin-bottom: 50px;
+}
 
 /* Details and cart */
 .details-section, .cart-section{
