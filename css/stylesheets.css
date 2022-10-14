@@ -251,7 +251,8 @@ footer address, ul, .copyright{
     flex-direction: column;
     margin: 50px auto;
     align-items: center;
-    text-align: center
+    text-align: center;
+
 }
 
 .about-img, .about-image img{
@@ -274,6 +275,7 @@ hr{
     font-size: 1rem;
     margin: 20px;
     text-align: left;
+    
 }
 
 /* Contact */
