@@ -119,14 +119,11 @@ h1, h2{
    font-size: 1.3rem;
 }
 .hero-section{
-    max-width: 1400px;
     margin: 20px auto;
 }
 .game-section{
-    
     display: flex;
     justify-content: center;
-    max-width: 1400px;
     margin: 50px auto;
     flex-wrap: wrap;
     gap:5px;
@@ -252,7 +249,6 @@ footer address, ul, .copyright{
 .about{
     display: flex;
     flex-direction: column;
-    max-width: 1400px;
     margin: 50px auto;
     align-items: center;
     text-align: center
@@ -285,7 +281,6 @@ form{
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 1400px;
     margin: 0px auto;
 }
 
@@ -356,7 +351,6 @@ fieldset label{
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 1400px;
     margin: 50px auto;
 }
 .details-container{
@@ -392,7 +386,6 @@ fieldset label{
 
 /*Checkout */
 .checkout-main{
-    max-width: 1400px;
     margin: 50px auto;
 }
 .checkout{
@@ -447,7 +440,6 @@ fieldset label{
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 1400px;
     margin: 100px auto;
     line-height: 150%;
     white-space: nowrap;
