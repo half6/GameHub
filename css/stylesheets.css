@@ -335,7 +335,7 @@ fieldset label{
     display: flex;
     justify-content: center;
     margin-top: 10px;
-}
+} 
 .location-info{
     background: #0C1014;
     text-align: center;
@@ -345,6 +345,7 @@ fieldset label{
     min-width: 295px;
     min-height:85px;
     margin-bottom: 50px;
+   
 }
 
 /* Details and cart */
