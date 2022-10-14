@@ -119,12 +119,15 @@ h1, h2{
    font-size: 1.3rem;
 }
 .hero-section{
-    margin-top: 10px;
+    max-width: 1400px;
+    margin: 20px auto;
 }
 .game-section{
-    margin-top: 30px;
+    
     display: flex;
     justify-content: center;
+    max-width: 1400px;
+    margin: 50px auto;
     flex-wrap: wrap;
     gap:5px;
    
@@ -249,21 +252,21 @@ footer address, ul, .copyright{
 .about{
     display: flex;
     flex-direction: column;
-    
+    max-width: 1400px;
+    margin: 50px auto;
     align-items: center;
     text-align: center
 }
 
 .about-img, .about-image img{
-    margin: 10px;
     width:250px;
     height:250px;
     border-radius: 50%;
-    margin: 10px;
+    
 }
 hr{
     width: 40%;
-    margin: 10px auto;
+    margin: auto;
     border: none;
     height: 5px;
     background: radial-gradient(50% 50% at 50% 50%, #BE9C37 0%, rgba(152, 117, 28, 0) 100%);
@@ -277,12 +280,13 @@ hr{
     text-align: left;
 }
 
-
 /* Contact */
 form{
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 1400px;
+    margin: 0px auto;
 }
 
 .form-input{
@@ -352,6 +356,8 @@ fieldset label{
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 1400px;
+    margin: 50px auto;
 }
 .details-container{
     max-width: 300px;
@@ -385,6 +391,10 @@ fieldset label{
 
 
 /*Checkout */
+.checkout-main{
+    max-width: 1400px;
+    margin: 50px auto;
+}
 .checkout{
     min-width: 250px;
     text-align: left;
@@ -437,7 +447,8 @@ fieldset label{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top:50px;
+    max-width: 1400px;
+    margin: 100px auto;
     line-height: 150%;
     white-space: nowrap;
 }
