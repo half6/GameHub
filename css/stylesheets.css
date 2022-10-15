@@ -436,13 +436,3 @@ fieldset label{
     line-height: 150%;
     white-space: nowrap;
 }
-.success-container p{
-    padding-top: 20px;
-}
-.success-container a{
-    margin-top: 50px;
-}
-.success-img img{
-    max-width: 200px;
-}
-
