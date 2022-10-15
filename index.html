@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Hub</title>
+    <meta name="description" content="Welcome to the home page of GameHub" />
+    <title>Game Hub || home page</title>
     <link rel="stylesheet" href="css/stylesheets.css">
     </link>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -14,14 +15,14 @@
     <header>
         <input type="checkbox" id="menu-checkbox" />
         <label for="menu-checkbox" class="hamburger-icon"><i class="fa-solid fa-bars fa-xl"></i></label>
-        <a href="index.html"><img id="logo" src="images/gamehub.png" alt="logo"></a>
+        <a href="index.html" aria-label="company logo, also works as home button"><img id="logo" src="images/gamehublogo.png" alt="logo"></a>
         <nav>
           <a href="index.html" class="active">Home</a>
           <a href="store.html">Store</a>
           <a href="about.html">About</a>
           <a href="contact.html">Contact</a>
         </nav>
-        <a href="cart.html" id="cart-icon"><i class="fa-solid fa-cart-shopping fa-xl cart-icon"></i></a>
+        <a href="cart.html" id="cart-icon" aria-label="link to shopping cart"><i class="fa-solid fa-cart-shopping fa-xl cart-icon"></i></a>
       </header>
     <main>
         <section class="hero-section">
@@ -31,39 +32,38 @@
         <hr>
         <section class="game-section">
                 <div class="game-card">
-                    <img src="images/GameHub_covers10.jpg" class="game-cover-img" alt="game-cover-forge-legend">
+                    <img src="images/forgelegend.jpg" class="game-cover-img" alt="game-cover-forge-legend">
                     <p id="game-title">Forge Legend</p>
                     <p id="price">$35</p>
-                    <a class="btn" id="game-card-btn" href="details.html">Details</a>
+                    <a class="btn game-card-btn" href="details.html">Details</a>
                 </div>
                 <div class="game-card">
-                    <img src="images/GameHub_covers4.jpg" class="game-cover-img" alt="game-cover-furious">
+                    <img src="images/furious.jpg" class="game-cover-img" alt="game-cover-furious">
                     <p id="game-title">Furious</p>
                     <p id="price">$35</p>
-                    <a class="btn" id="game-card-btn" href="details.html">Details</a>
+                    <a class="btn game-card-btn" href="details.html">Details</a>
                 </div>
                 <div class="game-card">
-                    <img src="images/GameHub_covers3.jpg" class="game-cover-img" alt="game-cover-black">
+                    <img src="images/black.jpg" class="game-cover-img" alt="game-cover-black">
                     <p id="game-title">Black</p>
                     <p id="price">$35</p>
-                    <a class="btn" id="game-card-btn" href="details.html">Details</a>
+                    <a class="btn game-card-btn" href="details.html">Details</a>
                 </div>
                 <div class="game-card">
-                    <img src="images/GameHub_covers9.jpg" class="game-cover-img" alt="game-cover-cyberpunk">
+                    <img src="images/cyberpunk.jpg" class="game-cover-img" alt="game-cover-cyberpunk">
                     <p id="game-title">Cyberpunk</p>
                     <p id="price">$35</p>
-                    <a class="btn" id="game-card-btn" href="details.html">Details</a>
+                    <a class="btn game-card-btn" href="details.html">Details</a>
                 </div>
         </section>
         <div class="all-games-btn-container"><a class="btn" href="store.html">All Games</a></div>   
     </main>
     <footer>
-        <ul class="socials">
-            <p>Stay connected</p>
-            <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook fa-xl"></i></a></li>
-            <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
+        <ul class="socials" aria-label="social media links">
+            <li><a href="https://www.facebook.com/" target="_blank" aria-label="facebook"><i class="fa-brands fa-square-facebook fa-xl"></i></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank" aria-label="instagram"><i class="fa-brands fa-instagram fa-xl"></i></a>
             </li>
-            <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube fa-xl"></i></a></li>
+            <li><a href="https://www.youtube.com/" target="_blank" aria-label="youtube"><i class="fa-brands fa-youtube fa-xl"></i></a></li>
         </ul>
         <p class="copyright">Copyright Ⓒ Game Hub: 2022: All rights reserved</p>
         <address class="address">
