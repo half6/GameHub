@@ -36,6 +36,7 @@ header{
     background-color:black;
     color: white;
     top: 0px;
+    z-index: 1;
 }
 nav{
     position: absolute;
