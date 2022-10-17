@@ -1,4 +1,8 @@
  /* body and html */
+ @font-face {
+    font-family: "Smack Laideth Down 2019";
+    src: url("../fonts/Smack\ Laideth\ Down\ 2019.otf");
+  }
  *
  {
     box-sizing: border-box;
@@ -111,12 +115,18 @@ nav a:hover{
     }
  }
 h1, h2{
+    font-family: 'Smack Laideth Down 2019';
+    font-weight: 400;
     text-align: center;
     padding: 15px;
+    word-spacing: 1.5px;
+    color:whitesmoke ;
 
 }
  h2{
-   font-size: 1.3rem;
+   font-size: 1.2rem;
+
+
 }
 .hero-section{
     margin: 20px;
