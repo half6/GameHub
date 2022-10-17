@@ -4,6 +4,7 @@
     box-sizing: border-box;
     padding: 0;                
     margin: 0; 
+
  }
  html { 
     background: url(../images/darkprem23.jpg) no-repeat center center fixed; 
@@ -119,14 +120,14 @@ h1, h2{
 .hero-section{
     margin: 20px;
 }
+
 .game-section{
     display: flex;
     justify-content: center;
     margin: 50px auto;
     flex-wrap: wrap;
     gap:7px;
-    row-gap: 40px;
-   
+    
 }
 .game-card{
     background:#0C1014;
@@ -136,8 +137,12 @@ h1, h2{
     
 }
 .game-card:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition-duration: 0.4s;
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
 }
 .game-card p{
     text-align: left;
@@ -185,16 +190,16 @@ h1, h2{
 }
 
 .game-card-btn{
-    padding: 5px 35px;
+    padding: 5px 40px;
 }
 
-@media (min-width: 411px){
+@media (min-width: 360px){
     .game-card-btn{
         padding: 5px 45px;
     }
     .game-section{
         gap:15px;
-        row-gap: 40px;
+        row-gap: 30px;
         
     }
     .game-cover-img{
@@ -213,8 +218,6 @@ h1, h2{
         
     }
 }
-
-
 /* Footer */
 footer{
     display: block;
@@ -258,7 +261,6 @@ footer address, ul, .copyright{
 
 .about-img, .about-image img{
     width:150px;
-
     border-radius: 50%;
     
 }
@@ -305,7 +307,7 @@ fieldset{
     flex-direction: column;
     line-height: 150%;
     background-color: #0C1014;
-    border: 2px solid #BE9C37;
+    border: 1px solid #BE9C37;
     border-radius: 5px;
 }
 fieldset label{
@@ -330,9 +332,9 @@ fieldset label{
 }
 .email-info, .phone-info{
     text-align: center;
-    border: 2px solid #BE9C37;
-    min-height: 65px;
-    min-width: 145px;
+    border: 1px solid #BE9C37;
+    height: 60px;
+    width: 135px;
     border-radius: 5px;
     line-height: 150%;
     background: #0C1014;
@@ -345,10 +347,10 @@ fieldset label{
 .location-info{
     background: #0C1014;
     text-align: center;
-    border: 2px solid #BE9C37;
+    border: 1px solid #BE9C37;
     border-radius: 5px;
     line-height: 150%;
-    width: 295px;
+    max-width: 260px;
     height:85px;
     margin:10px auto;
     }
