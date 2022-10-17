@@ -138,12 +138,8 @@ h1, h2{
     
 }
 .game-card:hover{
-    transform: scale(1.05);
+    transform: scale(1.08);
     transition-duration: 0.4s;
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
 }
 .game-card p{
     text-align: left;
@@ -178,12 +174,16 @@ h1, h2{
     text-decoration: none;
     background-color:#BE9C37;
     padding: 10px 50px;
-    border-radius: 5px;
+    border-radius: 2px;
     font-weight: bold;
     font-size: 1rem;
     color: #000000;
     margin: 10px;
-    display: block;   
+    display: block;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
 }
 
 .btn:active{
