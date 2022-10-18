@@ -345,6 +345,7 @@ fieldset label{
     margin: 0px;
     margin-top: 15px;
     border-radius: 0px;
+    border: none;
 }
 .contact-btn:active{
     background-color: #0FA958
