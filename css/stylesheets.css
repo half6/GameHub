@@ -129,6 +129,15 @@ h1, h2{
  h2{
    font-size: 1.2rem;
 }
+@media(max-width: 413px){
+    h1{
+        font-size: 1.2rem;
+        padding: 0px;
+    }
+    h2{
+        font-size: 1rem;
+    }
+}
 .hero-section{
     margin: 20px;
 }
@@ -192,6 +201,7 @@ h1, h2{
     display: block;
 }
 
+
 .btn:active{
     transform: scale(0.99);
 }
@@ -246,7 +256,7 @@ footer address, ul, .copyright{
     padding: 10px 10px;
 }
 
-@media (min-width: 600px){
+@media (min-width: 650px){
     footer{
         display: flex;
         justify-content: space-around;
@@ -272,7 +282,7 @@ footer address, ul, .copyright{
     
 }
 hr{
-    width: 40%;
+    width: 500px;
     margin: auto;
     border: none;
     height: 5px;
@@ -353,7 +363,7 @@ fieldset label{
 .location-info-container{
     display: flex;
     justify-content:center;
-    margin-top: 5px;
+    margin-top: 10px;
     align-items: center;
 }
 
@@ -376,10 +386,11 @@ fieldset label{
 }
 .details-container{
     max-width: 300px;
-}
-@media (min-width: 695px){
+ }
+@media (min-width: 601px){
     .details-container{
-        max-width: 400px;
+       max-width: 350px;
+       
     }
 }
 .cart-container, .details-container{
@@ -394,14 +405,14 @@ fieldset label{
     max-width:150px;
    
 }
-.details-container h3{
-    line-height: 150%;
-    padding:5px;
-    
+.forge-legend-text h3{
+    text-align: center;
 }
-.details-container p{
-  margin: 10px;
-  text-align: left;
+.forge-legend-text p, .secondary-info p{
+    line-height: 1.5;
+    text-align: left;
+    padding: 20px;
+  
 }
 
 
@@ -450,12 +461,14 @@ fieldset label{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin: 100px auto;
     gap:50px;
     white-space: nowrap;
 }
 .success-img img{
     width: 150px;
+    text-align: center;
 }
 .text-wrapper{
     line-height: 150%;
