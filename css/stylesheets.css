@@ -282,7 +282,7 @@ footer address, ul, .copyright{
     
 }
 hr{
-    width: 500px;
+    width: 300px;
     margin: auto;
     border: none;
     height: 5px;
@@ -304,6 +304,9 @@ hr{
     }
     .about-img, .about-image img{
         width:250px;
+    }
+    hr{
+        width: 500px;
     }
 }
 /* Contact */
