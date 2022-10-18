@@ -156,10 +156,7 @@ h1, h2{
     text-align: center;
     
 }
-.game-card:hover{
-    transform: scale(1.08);
-    transition-duration: 0.4s;
-}
+
 .game-card p{
     text-align: left;
     padding: 5px;
@@ -307,6 +304,10 @@ hr{
     }
     hr{
         width: 500px;
+    }
+    .game-card:hover{
+        transform: scale(1.08);
+        transition-duration: 0.4s;
     }
 }
 /* Contact */
