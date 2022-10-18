@@ -169,10 +169,10 @@ h1, h2{
     max-width: 120px;
     border-radius: 5px;
 }
-#price{
+.price{
     color: #BE9C37;
 }
-#game-title{
+.game-title{
     font-weight: bold;
 }
 
