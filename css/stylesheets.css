@@ -318,13 +318,14 @@ form{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0px auto;
+    width: 100%;
 }
 
 .form-input{
     padding: 5px;
 }
 fieldset{
+    min-width: 300px;
     padding: 10px;
     margin: 10px;
     display: flex;
@@ -334,32 +335,46 @@ fieldset{
     border: 1px solid #BE9C37;
     border-radius: 5px;
 }
+fieldset h2{
+    padding:0;
+}
 fieldset label{
     padding-top: 15px;
     padding-bottom: 5px;
+}
+textarea{
+    width: 100%;
+    height: 90px;
+}
+@media(min-width:600px){
+    textarea{
+        width: 100%;
+        height: 150px;
+    }
+    fieldset{
+        min-width: 330px;
+    }
 }
 .contact-btn{
     text-transform: uppercase;
     padding: 5px;
     text-align: center;
     margin: 0px;
-    margin-top: 15px;
+    margin-top: 15px;   
     border-radius: 0px;
     border: none;
-}
-.contact-btn:active{
-    background-color: #0FA958
 }
 .contact-info{
     display: flex;
     justify-content: center;
     gap:5px;
+ 
 }
 .email-info, .phone-info{
     text-align: center;
     border: 1px solid #BE9C37;
+    width: 145px;
     height: 60px;
-    width: 135px;
     border-radius: 5px;
     line-height: 150%;
     background: #0C1014;
@@ -373,9 +388,11 @@ fieldset label{
     justify-content:center;
     margin-top: 10px;
     align-items: center;
+
 }
 
 .location-info{
+    width: 290px;
     background: #0C1014;
     text-align: center;
     border: 1px solid #BE9C37;
@@ -383,6 +400,14 @@ fieldset label{
     line-height: 150%;
     padding:0px 70px;
     height:85px;
+    }
+    @media(min-width:600px){
+        .location-info{
+            width: 325px;
+        }
+        .email-info, .phone-info{
+            width: 160px;
+        }
     }
 
 /* Details and cart */
