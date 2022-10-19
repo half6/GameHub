@@ -449,7 +449,7 @@ fieldset label{
     background: none;
     background-color: #0C1014;
 }
-#total-text{
+.total-text{
     text-transform: uppercase;
     font-weight: bold;
 }
