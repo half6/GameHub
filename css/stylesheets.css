@@ -254,7 +254,7 @@ footer address, ul, .copyright{
     padding: 10px 10px;
 }
 
-@media (min-width: 650px){
+@media (min-width: 712px){
     footer{
         display: flex;
         justify-content: space-around;
