@@ -322,9 +322,10 @@ form{
     padding: 5px;
 }
 fieldset{
-    width: 300px;
+    width: min(100% - 2rem, 300px);
     padding: 10px;
-    margin: 10px;
+    margin:10px auto;
+    margin-inline:auto;
     display: flex;
     flex-direction: column;
     line-height: 150%;
@@ -353,24 +354,7 @@ textarea{
         min-width: 300px;
     }
 }
-@media(max-width:300px){
-    fieldset{
-        width: 240px;
-    }
-    .contact-info{
-        flex-direction: column;
-        align-items: center;
-        
-    }
-    .location-info{
-        max-width: 240px;
-        min-height: 110px;
-    }
-    .email-info, .phone-info{
-        min-width: 240px;
-    }
 
-}
 .contact-btn{
     text-transform: uppercase;
     padding: 5px;
@@ -390,12 +374,13 @@ textarea{
 .email-info, .phone-info{
     text-align: center;
     border: 1px solid #BE9C37;
-    width: 145px;
-    height: 60px;
     border-radius: 5px;
     line-height: 150%;
     background: #0C1014;
+    padding:5px 0;
+    width: min(100% - 2rem, 147px);
 }
+
 .fa-phone, .fa-envelope, .fa-location-dot{
     margin-top: 16px;
     color: #BE9C37;
@@ -403,13 +388,14 @@ textarea{
 .location-info-container{
     display: flex;
     justify-content:center;
-    margin-top: 10px;
+    margin-top: 5px;
     align-items: center;
 
 }
 
 .location-info{
-    width: 290px;
+    width: min(100% - 2rem, 300px);
+    margin-inline:auto;
     background: #0C1014;
     text-align: center;
     border: 1px solid #BE9C37;
@@ -418,14 +404,17 @@ textarea{
     padding:0 70px;
     height:85px;
     }
-    @media(min-width:600px){
-        .location-info{
-            width: 295px;
+    @media(max-width:340px){
+        .contact-info{
+            flex-direction: column;
+            align-items: center;     
         }
         .email-info, .phone-info{
-            width: 145px;
+            width: min(100% - 2rem, 300px);
         }
+    
     }
+
 
 /* Details and cart */
 .details-section, .cart-section{
