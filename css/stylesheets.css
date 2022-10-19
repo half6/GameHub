@@ -344,17 +344,6 @@ textarea{
     width: 100%;
     height: 90px;
 }
-
-@media(min-width:600px){
-    textarea{
-        width: 100%;
-        height: 150px;
-    }
-    fieldset{
-        min-width: 300px;
-    }
-}
-
 .contact-btn{
     text-transform: uppercase;
     padding: 5px;
@@ -412,7 +401,12 @@ textarea{
         .email-info, .phone-info{
             width: min(100% - 2rem, 300px);
         }
-    
+    }
+    @media(min-width:600px){
+        textarea{
+            width: 100%;
+            height: 150px;
+        }
     }
 
 
