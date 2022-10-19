@@ -45,14 +45,14 @@ header{
     width: 100%;
     background-color:black;
     color: white;
-    top: 0px;
+    top: 0;
     z-index: 1;
 }
 nav{
     position: absolute;
     background-color:#0C1014;
     top:105px;
-    left: 0px;
+    left: 0;
 }
 
 nav, #menu-checkbox{
@@ -65,14 +65,9 @@ nav a{
     display: block;
     color:white;
     padding: 15px 20px;
-
 }
 
-.cart-icon{
-    padding: 10px;
-}
-
-.hamburger-icon{
+.hamburger-icon, .cart-icon{
     padding: 10px;
 }
 #logo{
@@ -97,7 +92,7 @@ nav a{
 
         background-color: #000000;
         font-size: 1.2rem;
-        padding: 0px;
+        padding: 0;
         display: inline-block;
         position: static;
         margin-right: 80px;
@@ -143,7 +138,7 @@ h1, h2{
 @media(max-width: 413px){
     h1{
         font-size: 1.2rem;
-        padding: 0px;
+        padding: 0;
     }
     h2{
         font-size: 1rem;
@@ -193,7 +188,7 @@ h1, h2{
 .all-games-btn-container{
     height: fit-content;
     width:fit-content;
-    margin:0px auto;
+    margin:0 auto;
 }
 .btn{
     text-align: center;
@@ -260,7 +255,7 @@ footer address, ul, .copyright{
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding: 0px;
+        padding: 0;
     }
 
 }
@@ -290,7 +285,7 @@ hr{
 
 .about-text{
     max-width: 400px;
-    padding: 0px 10px;
+    padding: 0 10px;
     line-height: 150%;
     font-size: 1rem;
     margin-top: 20px;
@@ -302,7 +297,7 @@ hr{
 @media (min-width: 600px){
     .about-text{
         max-width: 600px;
-        padding: 0px 20px;
+        padding: 0 20px;
     }
     .about-img, .about-image img{
         width:250px;
@@ -380,10 +375,11 @@ textarea{
     text-transform: uppercase;
     padding: 5px;
     text-align: center;
-    margin: 0px;
-    margin-top: 15px;   
-    border-radius: 0px;
+    margin: 0;
+    margin-top: 15px;
+    border-radius: 0;
     border: none;
+
 }
 .contact-info{
     display: flex;
@@ -419,7 +415,7 @@ textarea{
     border: 1px solid #BE9C37;
     border-radius: 5px;
     line-height: 150%;
-    padding:0px 70px;
+    padding:0 70px;
     height:85px;
     }
     @media(min-width:600px){
@@ -481,7 +477,7 @@ textarea{
 .checkout{
     min-width: 250px;
     text-align: left;
-    border:0px
+    border:0
 }
 .checkout-btn-paypal{
     background-color: white;
@@ -490,9 +486,9 @@ textarea{
 .checkout-btn-paypal, .checkout-btn{
     text-align: center;
     padding: 5px;
-    margin: 0px;
+    margin: 0;
     margin-top: 20px;
-    border-radius: 0px;
+    border-radius: 0;
 }
 
 .checkout-main h2,.checkout-page {
