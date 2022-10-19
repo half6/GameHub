@@ -1,44 +1,49 @@
 <!DOCTYPE html>
 <html lang="en" class="checkout-page">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel ="stylesheet" href="css/stylesheets.css" />
+    <link rel="stylesheet" href="css/stylesheets.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <meta name="description" content="Checkout page" />
+    <meta name="description" content="Checkout page">
     <script src="https://kit.fontawesome.com/7cc6ea881f.js" crossorigin="anonymous"></script>
     <title>Checkout page</title>
 </head>
+
 <body>
     <main>
-        <h2>Summary</h2>
-        <section class="summary-section">
-            <div class="summary-text">
-                <p>Subtotal</p>
-                <p>Estimated Shipping</p>
-                <p>Estimated Tax</p>
-                <p id="total-text">Total</p>
+        <section>
+            <h2>Summary</h2>
+            <div class="summary-section">
+                <div class="summary-text">
+                    <p>Subtotal</p>
+                    <p>Estimated Shipping</p>
+                    <p>Estimated Tax</p>
+                    <p id="total-text">Total</p>
+                </div>
+                <div class="summary-text-price">
+                    <p>$35</p>
+                    <p>$0</p>
+                    <p>$0</p>
+                    <p id="total-text">$35</p>
+                </div>
             </div>
-            <div class="summary-text-price">
-                <p>$35</p>
-                <p>$0</p>
-                <p>$0</p>
-                <p id="total-text">$35</p>
-            </div>
+            <form>
+                <fieldset class="checkout">
+                    <label for="name">Name</label>
+                    <input type="text" required name="name" class="form-input checkout-input">
+                    <label for="email">Email</label>
+                    <input type="email" required name="email" class="form-input checkout-input">
+                    <label for="cc">CC</label>
+                    <input type="number" required name="css" class="form-input checkout-input">
+                    <a class="btn checkout-btn" href="checkout-success.html">Buy Now</a>
+                    <a class="btn checkout-btn-paypal" href="checkout-success.html">PayPal</a>
+                </fieldset>
+            </form>
         </section>
-        <form>
-            <fieldset class="checkout">
-                <label for="name">Name</label>
-                <input type="text" required name="name" class="form-input checkout-input" />
-                <label for="email">Email</label>
-                <input type="email" required name="email" class="form-input checkout-input" />
-                <label for="cc">CC</label>
-                <input type="number" required name="css" class="form-input checkout-input" />
-                <a class="btn checkout-btn"href="checkout-success.html">Buy Now</a>
-                <a class="btn checkout-btn-paypal"href="checkout-success.html">PayPal</a>
-            </fieldset>
-        </form>
     </main>
 </body>
-</html>             
+
+</html>
