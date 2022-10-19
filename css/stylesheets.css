@@ -425,7 +425,6 @@ textarea{
 /*Checkout */
 
 .checkout{
-    min-width: 250px;
     text-align: left;
     border:0
 }
