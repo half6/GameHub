@@ -14,9 +14,9 @@
 
 <body>
     <main>
-        <section>
+        <section class="checkout-section">
             <h2>Summary</h2>
-            <div class="summary-section">
+            <div class="summary-wrapper">
                 <div class="summary-text">
                     <p>Subtotal</p>
                     <p>Estimated Shipping</p>
@@ -31,14 +31,14 @@
                 </div>
             </div>
             <form>
-                <fieldset class="checkout">
+                <fieldset class="checkout-form">
                     <label for="name">Name</label>
                     <input type="text" id="name" required name="name" class="form-input checkout-input">
                     <label for="email">Email</label>
                     <input type="email" id="email" required name="email" class="form-input checkout-input">
                     <label for="cc">CC</label>
                     <input type="number" id="cc" required name="css" class="form-input checkout-input">
-                    <a class="cta checkout-cta" href="checkout-success.html">Buy Now</a>
+                    <a class="cta buy-now-cta" href="checkout-success.html">Buy Now</a>
                     <a class="cta checkout-cta-paypal" href="checkout-success.html">PayPal</a>
                 </fieldset>
             </form>

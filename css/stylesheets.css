@@ -284,26 +284,26 @@ form{
     padding: 5px;
 }
 fieldset{
-    width: min(100% - 2rem, 300px);
-    margin-inline:auto;
-    padding: 10px;
-    margin:10px auto;
     display: flex;
     flex-direction: column;
+    width: min(100% - 2rem, 300px);
+    margin-inline:auto;
+    margin-bottom: 5px;
+    padding: 0px 10px 10px 10px;
     line-height: 150%;
     background-color: var(--primary-color-black);
     border: 1px solid var(--primary-color-gold);
     border-radius: 5px;
 }
-fieldset h2{
-    padding:0;
-}
+
 fieldset label{
-    padding-top: 15px;
+    line-height: 1.5;
+    padding-top: 5px;
     padding-bottom: 5px;
 }
 textarea{
     height: 100px;
+    font-size: var(--font-size-normal);
 }
 .contact-cta{
     text-transform: uppercase;
@@ -319,6 +319,8 @@ textarea{
     display: flex;
     justify-content: center;
     gap:5px;
+    flex-direction: column;
+    align-items: center; 
  
 }
 .email-info, .phone-info{
@@ -327,8 +329,9 @@ textarea{
     border-radius: 5px;
     line-height: 150%;
     background: var(--primary-color-black);
-    padding:5px 0;
-    width: min(100% - 2rem, 147px);
+    padding: 5px 0;
+    width: min(100% - 2rem, 300px);
+    
 }
 
 .fa-phone, .fa-envelope, .fa-location-dot{
@@ -348,16 +351,16 @@ textarea{
     border: 1px solid var(--primary-color-gold);;
     border-radius: 5px;
     line-height: 150%;
-    height:85px;
+    padding: 5px 0;
     }
-    
-    @media(max-width:340px){
+    @media(min-width:21rem){
         .contact-info{
-            flex-direction: column;
-            align-items: center;     
+            display: flex;
+            flex-direction: row;
+            justify-content: center;    
         }
         .email-info, .phone-info{
-            width: min(100% - 2rem, 300px);
+            width: min(100% - 2rem, 147px);
         }
     }
     
@@ -366,11 +369,9 @@ textarea{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 50px auto;
 }
 .cart-container, .details-container{
     width: min(100% - 2rem, 350px);
-    margin-inline:auto; 
     text-align: center;
     border: 1px solid var(--primary-color-gold);;
     background-color: var(--primary-color-black);
@@ -379,8 +380,7 @@ textarea{
 .details-img, .cart-img{ 
     margin: 10px;
     border-radius: 5px;
-    max-width:150px;
-   
+    max-width:150px;  
 }
 .forge-legend-text h3{
     text-align: center;
@@ -393,15 +393,21 @@ textarea{
 
 /*Checkout */
 
-.checkout{
+.checkout-form{
     text-align: left;
-    border:0
+    border:0;
+    
+}
+.checkout-section h2, .total-text{
+    font-family: var(--main-font);
+    text-transform: uppercase;
+    font-weight: 700;
 }
 .checkout-cta-paypal{
     background-color: white;
     color:  #00457C
 }
-.checkout-cta-paypal, .checkout-cta{
+.checkout-cta-paypal, .buy-now-cta{
     text-align: center;
     padding: 5px;
     margin: 0;
@@ -409,23 +415,18 @@ textarea{
     border-radius: 0;
 }
 
-.checkout-main h2,.checkout-page {
+.checkout-page {
     text-align: center;
     margin-top: 20px;
     background: none;
     background-color: var(--primary-color-black);
 }
-.total-text{
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-.summary-section{
+.summary-wrapper{
     padding: 20px;
     display: flex;
     justify-content: center;
     gap:30px;
-    line-height: 150%;
+    line-height: 1.5;
     text-align: left;
 }
 
@@ -439,13 +440,11 @@ textarea{
     margin: 100px auto;
     gap:50px;
     white-space: nowrap;
+    line-height: 1.5;
 }
 .success-img img{
-    width: 150px;
+    max-width: 150px;
     text-align: center;
-}
-.text-wrapper{
-    line-height: 150%;
 }
 
 /* Footer */
@@ -461,10 +460,10 @@ footer address, ul, .copyright{
     padding:15px;
     font-style: normal;
 }
-.socials{
+.social-media-links{
     text-align: center;
 }
-.socials li{
+.social-media-links li{
     display: inline-block;
     padding: 10px 10px;
 }
