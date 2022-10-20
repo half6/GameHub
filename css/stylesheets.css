@@ -40,6 +40,7 @@ body{
     min-height: 100vh;
     width: 100%;
 }
+
 /* h1, h2, anchor, p elements and hr tag */
 h1, h2{
     font-family: var(--heading-font);
@@ -95,8 +96,11 @@ header{
 nav{
     position: absolute;
     background-color:var(--primary-color-black);
-    top:105px;
-    left: 0;
+    top:85px;
+    left: 4px;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color-gold);
+
 }
 
 nav, #menu-checkbox{
@@ -107,7 +111,7 @@ nav, #menu-checkbox{
 }
 nav a{
     display: block;
-    padding: 15px 20px;
+    padding: 20px;
 }
 
 .hamburger-icon, .cart-icon{
@@ -132,20 +136,25 @@ nav a{
     }
     nav{
         background-color: var(--black);
-        font-size: 1.2rem;
+        font-size: var(--heading-size-normal);
         padding: 0;
-        display: inline-block;
+        display: flex;
         position: static;
         margin-right: 80px;
+        border: none;
     }
-    
+  
     .hamburger-icon{
         display: none;
     }
     nav a{
         display: inline-block;
+        padding: 25px;
         transition-property: color;
         transition-duration: 0.3s;
+    }
+    .fa-house, .fa-store, .fa-circle-info, .fa-square-phone{
+        display: none  !important;
     }
     nav a:hover{
         color: var(--primary-color-gold);
@@ -160,6 +169,7 @@ nav a{
         transition-property: color;
         transition-duration: 0.3s;
     }
+
  }
 
 /* Game section, and game card components */
@@ -273,6 +283,7 @@ nav a{
         max-width:300px;
     }
 }
+
 /* Contact */
 form{
     display: flex;
@@ -361,6 +372,9 @@ textarea{
         }
         .email-info, .phone-info{
             width: min(100% - 2rem, 147px);
+        }
+        textarea{
+            height: 150px;
         }
     }
     
