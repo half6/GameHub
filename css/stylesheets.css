@@ -312,8 +312,8 @@ fieldset label{
     padding-top: 5px;
     padding-bottom: 5px;
 }
-textarea{
-    height: 90px;
+.textarea-field{
+    height: 110px;
     font-size: var(--font-size-normal);
 }
 .contact-cta{
@@ -373,8 +373,9 @@ textarea{
         .email-info, .phone-info{
             width: min(100% - 2rem, 147px);
         }
-        textarea{
+        .textarea-field{
             height: 150px;
+          
         }
     }
     
