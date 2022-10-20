@@ -1,7 +1,21 @@
- /* body and html */
+ /* body, html and variables */
  @font-face {
     font-family: "Smack Laideth Down 2019";
     src: url("../fonts/Smack\ Laideth\ Down\ 2019.otf");
+  }
+  :root{
+    --primary-color-gold: #BE9C37;
+    --primary-color-black:#0C1014;
+    --black:#000000;
+
+    --main-font: 'Inter', sans-serif;
+    --font-size-normal:0.9rem;
+
+    --heading-font: 'Smack Laideth Down 2019';
+    --heading-size-normal: 1rem;
+    --heading-size-large: 1.2rem;
+    --heading-weight:400;
+
   }
  *
  {
@@ -11,46 +25,76 @@
 
  }
  html { 
-    background: url(../images/darkprem23.jpg) no-repeat center center fixed; 
+    background: url(../images/darkprem23.jpg) no-repeat center fixed; 
     background-size: cover;
-    background-color: #000000;
+    background-color: var(--black);
     height: 100%;
-
-  
+    font-family: var(--main-font);
+    color: white;
+    font-size: 16px;
   }
 body{
-    font-family: 'Inter', sans-serif;
-    color: white;
     display: flex;
     flex-direction: column;
     gap:1rem;
     min-height: 100vh;
-    height: auto;
-    margin: 0;
-    padding: 0;
     width: 100%;
-
-
 }
-/* Home, main and store elements */
+/* h1, h2, anchor, p elements and hr tag */
+h1, h2{
+    font-family: var(--heading-font);
+    font-weight: var(--heading-weight);
+    text-align: center;
+    padding:20px;
+    word-spacing: 2px;
+    color:white;
+    padding-top:20px
+}
+h2{
+    font-size:var(--heading-size-normal)
+}
+h1{
+    font-size: var(--heading-size-large);
+}
+
 a{  
     text-decoration: none;
     color: white;
 }
+p{
+    font-size: var(--font-size-normal);
+}
+hr{
+    max-width: 300px;
+    margin: auto;
+    border: none;
+    height: 5px;
+    background: radial-gradient(50% 50% at 50% 50%, var(--primary-color-gold) 0%, rgba(152, 117, 28, 0) 100%);
+}
+@media(min-width:40rem){
+    :root{
+        --heading-size-normal: 1.2rem;
+        --heading-size-large: 2rem;
+        --font-size-normal:1rem;
+    }
+}
+
+/* header and navigation */
+
 header{
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: sticky;
     width: 100%;
-    background-color:black;
+    background-color:var(--black);
     color: white;
     top: 0;
     z-index: 1;
 }
 nav{
     position: absolute;
-    background-color:#0C1014;
+    background-color:var(--primary-color-black);
     top:105px;
     left: 0;
 }
@@ -63,7 +107,6 @@ nav, #menu-checkbox{
 }
 nav a{
     display: block;
-    color:white;
     padding: 15px 20px;
 }
 
@@ -79,18 +122,16 @@ nav a{
 #logo:active{
     transform: scale(0.99);
 }
-.active{
-    color: #BE9C37
+.active-page{
+    color: var(--primary-color-gold);
 }
 
- @media (min-width: 695px){
+ @media (min-width: 44rem){
     header{
-        
         justify-content: space-around;
     }
     nav{
-
-        background-color: #000000;
+        background-color: var(--black);
         font-size: 1.2rem;
         padding: 0;
         display: inline-block;
@@ -107,66 +148,46 @@ nav a{
         transition-duration: 0.3s;
     }
     nav a:hover{
-        color: #BE9C37;
+        color: var(--primary-color-gold);
     }
     .cart-icon{
         padding-right: 20px;
     }
     .cart-icon:hover{
-        color: #BE9C37;
+        color: var(--primary-color-gold);
     }
     .cart-icon{
         transition-property: color;
         transition-duration: 0.3s;
     }
  }
-h1, h2{
-    font-family: 'Smack Laideth Down 2019';
-    font-weight: 400;
-    text-align: center;
-    padding: 15px;
-    word-spacing: 1.5px;
-    color:whitesmoke ;
 
-}
- h2{
-   font-size: 1.2rem;
-}
-.hero-section h2{
-    margin-top: 30px;
-}
-@media(max-width: 413px){
-    h1{
-        font-size: 1.2rem;
-        padding: 0;
-    }
-    h2{
-        font-size: 1rem;
-    }
-}
-.hero-section{
-    margin: 20px;
-}
-
+/* Game section, and game card components */
 .game-section{
     display: flex;
     justify-content: center;
     margin: 50px auto;
     flex-wrap: wrap;
     gap:7px;
+    row-gap: 30px;  
+ 
 }
 .game-card{
     width: min(100% - 2rem, 155px);
-    background:#0C1014;
-    border: 1.5px solid #BE9C37;
+    background:var(--primary-color-black);
+    border: 1.5px solid var(--primary-color-gold);
     border-radius: 5px;
     text-align: center;
 }
-
 .game-card p{
     text-align: left;
-    padding: 5px;
-    padding-left: 8px;
+    padding: 5px 0px 5px 8px;
+}
+.price{
+    color: var(--primary-color-gold);
+}
+.game-title{
+    font-weight: bold;
 }
 
 .game-cover-img{
@@ -175,52 +196,39 @@ h1, h2{
     max-width: 120px;
     border-radius: 5px;
 }
-.price{
-    color: #BE9C37;
-}
-.game-title{
-    font-weight: bold;
-}
 
 .sold-by-users{
     margin-bottom: 15px;
 }
-.all-games-btn-container{
+
+.cta{
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    background-color:var(--primary-color-gold);
+    padding: 10px 50px;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--black);
+    margin: 10px;
+    display: block;
+}
+.all-games-cta-container{
     height: fit-content;
     width:fit-content;
     margin:0 auto;
 }
-.btn{
-    text-align: center;
-    cursor: pointer;
-    text-decoration: none;
-    background-color:#BE9C37;
-    padding: 10px 50px;
-    border-radius: 2px;
-    font-weight: bold;
-    font-size: 1rem;
-    color: #000000;
-    margin: 10px;
-    display: block;
-}
-.game-card-btn{
+.game-card-cta{
     padding: 5px;
     text-align: center;
 }
 
-.btn:active{
+.cta:active{
     transform: scale(0.99);
 }
 
-
-
-@media (min-width: 360px){
-    .game-section{
-        gap:5px;
-        row-gap: 30px;    
-    } 
-}
-@media (min-width: 600px){
+@media (min-width: 40rem){
     .game-section{
         gap:15px;
         
@@ -233,73 +241,35 @@ h1, h2{
         transition-duration: 0.4s;
     }
 }
-/* Footer */
-footer{
-    display: block;
-    text-align: center;
-    background-color: #000000;
-    line-height: 150%;
-    margin-top: auto;
-}
 
-footer address, ul, .copyright{
-    padding:15px;
-    font-style: normal;
-}
-.socials{
-    text-align: center;
-}
-.socials li{
-    display: inline-block;
-    padding: 10px 10px;
-}
-
-@media (min-width: 712px){
-    footer{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding: 0;
-    }
-
-}
 /* About */
 
-.about{
+.about-section{
     display: flex;
     flex-direction: column;
-    margin: 30px auto;
     align-items: center;
-    text-align: center;
 }
- .about-image img{
-    max-width:200px;
+ .about-image{
+    max-width:180px;
     border-radius: 50%;
 }
-hr{
-    max-width: 300px;
-    margin: auto;
-    border: none;
-    height: 5px;
-    background: radial-gradient(50% 50% at 50% 50%, #BE9C37 0%, rgba(152, 117, 28, 0) 100%);
-}
+
 .about-text{
-    width: min(100% - 2rem, 400px);
+    width: min(100% - 2rem, 350px);
     padding: 0 10px;
     line-height: 150%;
-    font-size: 1rem;
     margin-top: 20px;
     text-align: left;
 }
 .about-text p{
     margin-top: 30px;
 }
-@media (min-width: 600px){
+@media (min-width: 40rem){
     .about-text{
         width: min(100% - 2rem, 600px);
         padding: 0 10px;
     }
-    .about-image img{
+    .about-image{
         max-width:300px;
     }
 }
@@ -308,7 +278,6 @@ form{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
 }
 
 .form-input{
@@ -322,8 +291,8 @@ fieldset{
     display: flex;
     flex-direction: column;
     line-height: 150%;
-    background-color: #0C1014;
-    border: 1px solid #BE9C37;
+    background-color: var(--primary-color-black);
+    border: 1px solid var(--primary-color-gold);
     border-radius: 5px;
 }
 fieldset h2{
@@ -336,7 +305,7 @@ fieldset label{
 textarea{
     height: 100px;
 }
-.contact-btn{
+.contact-cta{
     text-transform: uppercase;
     padding: 5px;
     text-align: center;
@@ -354,17 +323,17 @@ textarea{
 }
 .email-info, .phone-info{
     text-align: center;
-    border: 1px solid #BE9C37;
+    border: 1px solid var(--primary-color-gold);;
     border-radius: 5px;
     line-height: 150%;
-    background: #0C1014;
+    background: var(--primary-color-black);
     padding:5px 0;
     width: min(100% - 2rem, 147px);
 }
 
 .fa-phone, .fa-envelope, .fa-location-dot{
     margin-top: 16px;
-    color: #BE9C37;
+    color: var(--primary-color-gold);;
 }
 .location-info-container{
     display: flex;
@@ -374,9 +343,9 @@ textarea{
 
 .location-info{
     width: min(100% - 2rem, 300px);
-    background: #0C1014;
+    background: var(--primary-color-black);
     text-align: center;
-    border: 1px solid #BE9C37;
+    border: 1px solid var(--primary-color-gold);;
     border-radius: 5px;
     line-height: 150%;
     height:85px;
@@ -403,8 +372,8 @@ textarea{
     width: min(100% - 2rem, 350px);
     margin-inline:auto; 
     text-align: center;
-    border: 1px solid #BE9C37;
-    background-color: #0C1014;
+    border: 1px solid var(--primary-color-gold);;
+    background-color: var(--primary-color-black);
     border-radius: 5px;
 }
 .details-img, .cart-img{ 
@@ -428,11 +397,11 @@ textarea{
     text-align: left;
     border:0
 }
-.checkout-btn-paypal{
+.checkout-cta-paypal{
     background-color: white;
     color:  #00457C
 }
-.checkout-btn-paypal, .checkout-btn{
+.checkout-cta-paypal, .checkout-cta{
     text-align: center;
     padding: 5px;
     margin: 0;
@@ -444,7 +413,7 @@ textarea{
     text-align: center;
     margin-top: 20px;
     background: none;
-    background-color: #0C1014;
+    background-color: var(--primary-color-black);
 }
 .total-text{
     text-transform: uppercase;
@@ -477,4 +446,35 @@ textarea{
 }
 .text-wrapper{
     line-height: 150%;
+}
+
+/* Footer */
+footer{
+    display: block;
+    text-align: center;
+    background-color:var(--black);
+    line-height: 150%;
+    margin-top: auto;
+}
+
+footer address, ul, .copyright{
+    padding:15px;
+    font-style: normal;
+}
+.socials{
+    text-align: center;
+}
+.socials li{
+    display: inline-block;
+    padding: 10px 10px;
+}
+
+@media (min-width: 45rem){
+    footer{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0;
+    }
+
 }
