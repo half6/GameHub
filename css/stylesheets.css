@@ -396,8 +396,13 @@ fieldset label{
 .details-img, .cart-img{ 
     margin: 10px;
     border-radius: 5px;
-    max-width:150px;  
+    max-width:150px; 
 }
+#changeme{
+    width: 100px;
+    height: 100px;
+}
+
 .forge-legend-text h3{
     text-align: center;
 }
