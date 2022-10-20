@@ -364,6 +364,11 @@ fieldset label{
     line-height: 150%;
     padding: 5px 0;
     }
+    @media(min-width:40rem){
+        .textarea-field{
+            height: 150px;
+        }
+    }
     @media(min-width:21rem){
         .contact-info{
             display: flex;
@@ -372,10 +377,6 @@ fieldset label{
         }
         .email-info, .phone-info{
             width: min(100% - 2rem, 147px);
-        }
-        .textarea-field{
-            height: 150px;
-          
         }
     }
     
