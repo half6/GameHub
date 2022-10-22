@@ -390,7 +390,7 @@ fieldset label{
     align-items: center;
 }
 .cart-container, .details-container{
-    width: min(100% - 2rem, 350px);
+    width: min(100% - 2rem, 330px);
     text-align: center;
     border: 1px solid var(--primary-color-gold);;
     background-color: var(--primary-color-black);
@@ -503,5 +503,5 @@ footer address, ul, .copyright{
 
 
 .add-to-cart-cta{
-    margin: 10px 20px;
+    margin: 10px 15px;
 }
