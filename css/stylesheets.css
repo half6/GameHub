@@ -411,6 +411,10 @@ fieldset label{
     padding: 20px;
 }
 
+.add-to-cart-cta{
+    margin: 10px 15px;
+}
+
 /*Checkout */
 
 .checkout-form{
@@ -496,12 +500,4 @@ footer address, ul, .copyright{
         padding: 0;
     }
 
-}
-
-
-
-
-
-.add-to-cart-cta{
-    margin: 10px 15px;
 }
