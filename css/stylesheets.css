@@ -470,6 +470,7 @@ fieldset label{
     font-size: var(--font-size-normal);
     font-weight: 700;
 }
+
 .product-info-wrapper{
     display: flex;
     text-align: left;
