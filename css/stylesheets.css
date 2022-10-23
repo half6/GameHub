@@ -103,6 +103,32 @@ nav{
 
 }
 
+
+
+
+
+/* testing add to cart function */
+.shopping-cart{
+    position: relative;
+    padding: 5px;
+    
+}
+.item-amount{
+    top: -15px;
+    right:5px;
+    padding: 4px;
+    border-radius: 3px;
+    position: absolute;
+    background: red;
+    font-size: var( --font-size-normal);
+
+}
+
+/*                             */
+
+
+
+
 nav, #menu-checkbox{
     display: none;
 }
@@ -383,20 +409,22 @@ fieldset label{
         }
     }
     
-/* Details and cart */
+/* Details */
 .details-section, .cart-section{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.cart-container, .details-container{
+
+.details-container{
     width: min(100% - 2rem, 330px);
     text-align: center;
     border: 1px solid var(--primary-color-gold);;
     background-color: var(--primary-color-black);
     border-radius: 5px;
 }
-.details-img, .cart-img{ 
+
+.details-img{ 
     margin: 10px;
     border-radius: 5px;
     max-width:150px; 
@@ -411,8 +439,91 @@ fieldset label{
     padding: 20px;
 }
 
-.add-to-cart-cta{
-    margin: 10px 15px;
+
+/* cart */
+.cart-section, .checkout-section{
+    background: var(--primary-color-black);
+    margin: 10px auto;
+    max-width: 1000px;
+    text-align: center;
+    line-height: 1.5;
+
+}
+.cart-item{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 100%;
+    margin-inline: auto;
+    padding: 10px;
+    overflow: hidden;
+
+}
+.cart-img-container{
+    max-width: 100px;
+}
+.cart-image {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.cart-section h2{
+    font-family: var(--main-font);
+    font-size: var(--font-size-normal);
+    font-weight: 700;
+}
+.product-info-wrapper{
+    display: flex;
+    text-align: left;
+    gap: 10px;
+}
+
+.cart-input{
+    max-width: 50px;
+    width: auto;
+    padding: 5px 5px;
+    border-radius: 5px;
+    border:none;
+}
+.product-info{
+    grid-column: 2;
+}
+.amount{
+    grid-column: 1;
+    grid-row:2;
+}
+
+.item-price{
+    grid-column: 2;
+    grid-row:2;
+}
+.total-cost{
+    grid-column: 3;
+    grid-row: 2;
+}
+
+@media (min-width: 40rem){
+.cart-item{
+    grid-template-columns: repeat(4, 1fr);
+}
+ .product-info{
+    grid-column: 1;
+ }
+ .amount{
+    grid-column: 2;
+    grid-row: 1;
+}
+.item-price{
+    grid-column: 3;
+    grid-row:1;
+}
+.total-cost{
+    grid-column: 4;
+    grid-row: 1;
+}
+.product-info-wrapper{
+    align-items: center;
+}
 }
 
 /*Checkout */

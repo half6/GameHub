@@ -24,8 +24,12 @@
             <a href="about.html"><i class="fa-solid fa-circle-info"></i> About</a>
             <a href="contact.html"><i class="fa-solid fa-square-phone"></i> Contact</a>
         </nav>
-        <a href="cart.html" id="cart-icon" aria-label="link to shopping cart"><i
+        <div class="shopping-cart">
+            <a href="cart.html" id="cart-icon" aria-label="link to shopping cart"><i
                 class="fa-solid fa-cart-shopping fa-xl cart-icon"></i></a>
+            <div class="item-amount">0</div>
+        </div>
+
     </header>
     <main>
 
@@ -33,7 +37,7 @@
             <h1>Welcome to the universe of games</h1>
             <h2>Featured games</h2>
             <hr>
-            <div class="game-section">
+            <div class="game-section" id="featured-games">
                 <div class="game-card">
                     <img src="images/forgelegend.jpg" class="game-cover-img" alt="game-cover-forge-legend">
                     <p class="game-title">Forge Legend</p>
@@ -79,6 +83,7 @@
             <p>0255 Oslo</p>
         </address>
     </footer>
-</body>
 
+</body>
+<script src="js/main.js"></script>
 </html>

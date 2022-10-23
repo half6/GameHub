@@ -28,26 +28,63 @@
                 class="fa-solid fa-cart-shopping fa-xl cart-icon"></i></a>
     </header>
     <main>
-        <div class="cart-section">
-            <div class="cart-container">
-                <img src="images/forgelegend.jpg" class="cart-img" alt="forge-legend-cover">
-                <div class="summary-wrapper">
-                    <div class="summary-text">
-                        <p>Forge Legend</p>
-                        <p>Estimated Shipping</p>
-                        <p>Estimated Tax</p>
-                        <p class="total-text">Total</p>
-                    </div>
-                    <div class="summary-text-price">
-                        <p>$35</p>
-                        <p>$0</p>
-                        <p>$0</p>
-                        <p class="total-text">$35</p>
-                    </div>
+        <section class="cart-section">
+            <h1>Your Cart</h1>
+            <div class="cart-item">
+                <div class=product-info>
+                    <h2>Product</h2>
+                    <div class="product-info-wrapper">
+                        <div class="cart-img-container"><img src="images/forgelegend.jpg" class="cart-image"></div>
+                        <div class="product-wrapper-text">
+                            <p>Forge Legend</p>
+                            <p>Playbox</p>
+                        </div>
+                    </div>  
+                </div>
+                <div class="amount">
+                    <h2>Amount</h2>
+                    <input type="number" class="cart-input"></input>
+                </div>
+                <div class="item-price">
+                    <h2>Price</h2>
+                    <p>$35</p>
+                </div>
+                <div class="total-cost">
+                    <h2>Total</h2>
+                    <p>$35</p>
+                </div>
+            </div>  
+        </section>
+        <section class="checkout-section">
+            <h2>Summary</h2>
+            <div class="summary-wrapper">
+                <div class="summary-text">
+                    <p>Subtotal</p>
+                    <p>Estimated Shipping</p>
+                    <p>Estimated Tax</p>
+                    <p class="total-text">Total</p>
+                </div>
+                <div class="summary-text-price">
+                    <p>$35</p>
+                    <p>$0</p>
+                    <p>$0</p>
+                    <p class="total-text">$35</p>
                 </div>
             </div>
-            <a href="checkout.html" class="cta">Checkout</a>
-        </div>
+            <form>
+                <fieldset class="checkout-form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required name="name" class="form-input checkout-input">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required name="email" class="form-input checkout-input">
+                    <label for="cc">CC</label>
+                    <input type="number" id="cc" required name="css" class="form-input checkout-input">
+                    <a class="cta buy-now-cta" href="checkout-success.html">Buy Now</a>
+                    <a class="cta checkout-cta-paypal" href="checkout-success.html">PayPal</a>
+                </fieldset>
+            </form>
+        </section>
+        
     </main>
     <footer>
         <ul class="social-media-links" aria-label="social media links">
