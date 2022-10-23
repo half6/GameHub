@@ -438,8 +438,6 @@ fieldset label{
     text-align: left;
     padding: 20px;
 }
-
-
 /* cart */
 .cart-section, .checkout-section{
     background: var(--primary-color-black);
