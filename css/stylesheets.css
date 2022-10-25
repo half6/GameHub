@@ -109,7 +109,6 @@ nav, #menu-checkbox{
     flex-direction: column;
 }
 nav a{
-    display: block;
     padding: 20px;
 }
 
@@ -131,11 +130,11 @@ nav a{
 
  @media (min-width: 44rem){
     nav{
+        display: initial;
         flex-direction: row;
         background-color: var(--black);
         font-size: var(--heading-size-normal);
         padding: 0;
-        display: flex;
         position: static;
         margin-right: 80px;
         border: none;
