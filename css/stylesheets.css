@@ -85,7 +85,7 @@ hr{
 header{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     position: sticky;
     width: 100%;
     background-color:var(--black);
@@ -100,40 +100,13 @@ nav{
     left: 4px;
     border-radius: 5px;
     border: 1px solid var(--primary-color-gold);
-
 }
-
-
-
-
-
-/* testing add to cart function */
-.shopping-cart{
-    position: relative;
-    padding: 5px;
-    
-}
-.item-amount{
-    top: -15px;
-    right:5px;
-    padding: 4px;
-    border-radius: 3px;
-    position: absolute;
-    background: red;
-    font-size: var( --font-size-normal);
-
-}
-
-/*                             */
-
-
-
-
 nav, #menu-checkbox{
     display: none;
 }
 #menu-checkbox:checked ~ nav{
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 nav a{
     display: block;
@@ -157,10 +130,8 @@ nav a{
 }
 
  @media (min-width: 44rem){
-    header{
-        justify-content: space-around;
-    }
     nav{
+        flex-direction: row;
         background-color: var(--black);
         font-size: var(--heading-size-normal);
         padding: 0;
