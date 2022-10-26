@@ -94,6 +94,10 @@ header{
     z-index: 1;
 }
 nav{
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    padding: 20px;
     position: absolute;
     background-color:var(--primary-color-black);
     top:85px;
@@ -105,45 +109,33 @@ nav, #menu-checkbox{
     display: none;
 }
 #menu-checkbox:checked ~ nav{
-    display: flex;
-    flex-direction: column;
-}
-nav a{
-    padding: 20px;
+    display: inherit;
 }
 
-.hamburger-icon, .cart-icon{
-    padding: 10px;
-}
 #logo{
     cursor: pointer;
     padding: 10px;
     max-width:150px;   
 }
 
-#logo:active{
-    transform: scale(0.99);
-}
 .active-page{
     color: var(--primary-color-gold);
 }
 
  @media (min-width: 44rem){
     nav{
-        display: initial;
+        display: inherit;
         flex-direction: row;
         background-color: var(--black);
         font-size: var(--heading-size-normal);
-        padding: 0;
         position: static;
-        margin-right: 80px;
+        margin-right: 100px;
         border: none;
     }
     .hamburger-icon{
         display: none;
     }
     nav a, .cart-icon{
-        padding: 25px;
         transition-property: color;
         transition-duration: 0.3s;
     }
@@ -153,6 +145,7 @@ nav a{
     nav a:hover, .cart-icon:hover{
         color: var(--primary-color-gold);
     }
+    
  }
 
 /* Game section, and game card components */
@@ -190,31 +183,8 @@ nav a{
 .sold-by-users{
     margin-bottom: 15px;
 }
-.cta{
-    text-align: center;
-    cursor: pointer;
-    text-decoration: none;
-    background-color:var(--primary-color-gold);
-    padding: 10px 50px;
-    border-radius: 3px;
-    font-weight: bold;
-    font-size: 1rem;
-    color: var(--black);
-    margin: 10px;
-    display: block;
-}
-.all-games-cta-container{
-    height: fit-content;
-    width:fit-content;
-    margin:0 auto;
-}
-.game-card-cta{
-    padding: 5px;
-    text-align: center;
-}
-.cta:active{
-    transform: scale(0.99);
-}
+
+
 @media (min-width: 49rem){
     .game-section{
         gap:15px;
@@ -226,8 +196,47 @@ nav a{
         transform: translateY(-5px);
         transform: scale(1.08);
         transition-duration: 0.4s;
-        box-shadow: 0px 5px 5px 1px var(--primary-color-gold);
+        box-shadow: 0px 4px 4px 1px var(--primary-color-gold);
     }
+}
+
+/*Buttons /CTA */
+.cta{
+    text-align: center;
+    text-decoration: none;
+    background-color:var(--primary-color-gold);
+    padding: 10px 50px;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: var(--font-size-normal);
+    color: var(--black);
+    margin: 10px;
+    display: block;
+    border: none;
+}
+.cta-small{
+    padding: 5px;
+}
+.cta-large{
+    text-transform: uppercase;
+    margin: 10px 0 5px 0;
+    border-radius: 0;
+    padding: 5px;
+
+}
+.checkout-paypal{
+    background-color: white;
+    color:  #00457C;
+    margin-top:5px;
+}
+
+.cta-container{
+    height: fit-content;
+    width:fit-content;
+    margin:0 auto;
+}
+.cta:active, #logo:active{
+    transform: scale(0.99);
 }
 
 /* About */
@@ -263,6 +272,7 @@ nav a{
 }
 
 /* Contact */
+
 form{
     display: flex;
     flex-direction: column;
@@ -294,16 +304,7 @@ fieldset label{
     height: 110px;
     font-size: var(--font-size-normal);
 }
-.contact-cta{
-    text-transform: uppercase;
-    padding: 5px;
-    text-align: center;
-    margin: 0;
-    margin-top: 15px;
-    border-radius: 0;
-    border: none;
 
-}
 .contact-info{
     display: flex;
     justify-content: center;
@@ -366,12 +367,20 @@ fieldset label{
     background-color: var(--primary-color-black);
     border-radius: 5px;
 }
-
-.cta-price{
+.product-details-info{
     padding: 10px;
+    background: #0d1216;
+    color: var(--primary-color-gold);
+}
+
+.product-details-price{
     font-weight: 700;
     font-size: 1.5rem;
     color: var(--primary-color-gold);
+    padding: 10px;
+}
+.product-details-digital-info{
+    padding: 10px;
 }
 
 .details-img-container{
@@ -379,21 +388,11 @@ fieldset label{
     max-width: 150px;
     text-align: center;
 }
-.details-img{
-    width: 100%;
-    border-radius: 5px;
-}
+
 .main-info, .price-cta-container, .description, .secondary-info{
     margin: 10px 0px;
 }   
-.price-cta-container{
-    background: #0d1216;
-    padding: 10px;
-}
-.price-cta-container p {
-    padding: 10px;
-    color: var(--primary-color-gold);
-}
+
 
 @media (min-width: 40rem){
     .details-container{
@@ -413,7 +412,7 @@ fieldset label{
         grid-column: 3/5;
         grid-row: 3;
     }
-    .price-cta-container{
+    .product-details-info{
         grid-column: 3/5;
         grid-row: 1;
         margin: 0;
@@ -441,15 +440,12 @@ fieldset label{
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(3, 1fr);
-    max-width: 100%;
-    margin-inline: auto;
     padding: 10px;
-
 }
 .cart-img-container{
     max-width: 80px;
 }
-.cart-img {
+.img {
     max-width: 100%;
     border-radius: 5px;
 }
@@ -469,8 +465,7 @@ fieldset label{
 
 .cart-input{
     max-width: 50px;
-    width: auto;
-    padding: 5px 5px;
+    padding: 5px;
     border-radius: 5px;
     border:none;
 }
@@ -524,30 +519,11 @@ fieldset label{
 .checkout-form{
     text-align: left;
     border:0;
-    
 }
 .checkout-section h2, .total-text{
     font-family: var(--main-font);
     text-transform: uppercase;
     font-weight: 700;
-}
-.checkout-cta-paypal{
-    background-color: white;
-    color:  #00457C
-}
-.checkout-cta-paypal, .buy-now-cta{
-    text-align: center;
-    padding: 5px;
-    margin: 0;
-    margin-top: 20px;
-    border-radius: 0;
-}
-
-.checkout-page {
-    text-align: center;
-    margin-top: 20px;
-    background: none;
-    background-color: var(--primary-color-black);
 }
 .summary-wrapper{
     padding: 20px;
@@ -559,20 +535,21 @@ fieldset label{
 }
 
 /*success*/
-
+.checkout-page{
+    background: var(--primary-color-black);
+}
 .success-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     margin: 100px auto;
     gap:50px;
     white-space: nowrap;
     line-height: 1.5;
-}
-.success-img img{
-    max-width: 150px;
     text-align: center;
+}
+.success-container img{
+    max-width: 150px;
+}
+.success-image, .text-wrapper{
+    margin-bottom: 50px;
 }
 
 /* Footer */
