@@ -222,12 +222,14 @@ nav, #menu-checkbox{
     margin: 10px 0 5px 0;
     border-radius: 0;
     padding: 10px;
-
 }
 .checkout-paypal{
     background-color: white;
     color:  #00457C;
     margin-top:5px;
+}
+.checkout-cta{
+    padding: 5px;
 }
 
 .cta-container{
