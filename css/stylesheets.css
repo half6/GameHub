@@ -143,17 +143,15 @@ nav, #menu-checkbox{
         position: static;
         border: none;
         height:auto;
-       
+        margin: auto;
+       text-align: center;
     }
     .nav-ul{
        display: flex;
-       gap:10px;
-       margin-right: 100px;
-       
+       margin-right: 50px;
     }
-    .cart-icon{
-        
-    }
+    
+
     .hamburger-icon{
         display: none;
     }
@@ -176,8 +174,8 @@ nav, #menu-checkbox{
     justify-content: center;
     margin: 50px auto;
     flex-wrap: wrap;
-    gap:10px;
-    row-gap: 50px;  
+    gap:12px;
+    row-gap: 40px;  
 }
 .game-card{
     width: min(100%, 190px);
