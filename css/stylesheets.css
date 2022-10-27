@@ -12,8 +12,9 @@
     --font-size-normal:0.9rem;
 
     --heading-font: 'Smack Laideth Down 2019';
+    --font-size-nav: 1.2rem;
     --heading-size-normal: 1rem;
-    --heading-size-large: 1.2rem;
+    --heading-size-large: 1.3rem;
     --heading-weight:400;
 
   }
@@ -100,11 +101,23 @@ nav{
     padding: 20px;
     position: absolute;
     background-color:var(--primary-color-black);
-    top:85px;
-    left: 4px;
-    border-radius: 5px;
+    top:105px;
+    left: 0px;
+    height: 50vh;
+    border-radius: 0 5px 5px 0;
     border: 1px solid var(--primary-color-gold);
+    border-left: none;
+    font-size: var(--font-size-nav);
 }
+
+.nav-ul{
+    display: block;
+}
+.nav-ul li{
+    list-style-type: none;
+    padding: 25px;
+}
+
 nav, #menu-checkbox{
     display: none;
 }
@@ -124,13 +137,22 @@ nav, #menu-checkbox{
 
  @media (min-width: 44rem){
     nav{
-        display: inherit;
-        flex-direction: row;
+        display: contents;
         background-color: var(--black);
         font-size: var(--heading-size-normal);
         position: static;
-        margin-right: 100px;
         border: none;
+        height:auto;
+       
+    }
+    .nav-ul{
+       display: flex;
+       gap:10px;
+       margin-right: 100px;
+       
+    }
+    .cart-icon{
+        
     }
     .hamburger-icon{
         display: none;
@@ -154,11 +176,11 @@ nav, #menu-checkbox{
     justify-content: center;
     margin: 50px auto;
     flex-wrap: wrap;
-    gap:7px;
+    gap:14px;
     row-gap: 30px;  
 }
 .game-card{
-    width: min(100%, 155px);
+    width: min(100%, 200px);
     background:var(--primary-color-black);
     border: 1.5px solid var(--primary-color-gold);
     border-radius: 5px;
@@ -177,7 +199,7 @@ nav, #menu-checkbox{
 .game-cover-img{
     margin-top: 10px;
     background-size:cover;
-    max-width: 120px;
+    max-width: 150px;
     border-radius: 5px;
 }
 .sold-by-users{
@@ -185,9 +207,10 @@ nav, #menu-checkbox{
 }
 
 
-@media (min-width: 49rem){
+@media (min-width: 48rem){
     .game-section{
-        gap:15px;
+        gap:10px;
+        flex-direction:row;
     }
     .game-card{
         width: min(100%, 180px);
@@ -214,9 +237,9 @@ nav, #menu-checkbox{
     display: block;
     border: none;
 }
-.cta-small{
-    padding: 5px;
-}
+  .cta-small{
+    padding: 7px;
+  }
 .cta-large{
     text-transform: uppercase;
     margin: 10px 0 5px 0;
