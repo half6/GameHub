@@ -176,11 +176,11 @@ nav, #menu-checkbox{
     justify-content: center;
     margin: 50px auto;
     flex-wrap: wrap;
-    gap:14px;
-    row-gap: 30px;  
+    gap:10px;
+    row-gap: 50px;  
 }
 .game-card{
-    width: min(100%, 200px);
+    width: min(100%, 190px);
     background:var(--primary-color-black);
     border: 1.5px solid var(--primary-color-gold);
     border-radius: 5px;
