@@ -85,6 +85,7 @@ hr{
 
 header{
     display: flex;
+    padding: 10px 0;
     align-items: center;
     justify-content: space-around;
     position: sticky;
@@ -94,20 +95,32 @@ header{
     top: 0;
     z-index: 1;
 }
-nav{
+.nav-menu{
     display: flex;
     flex-direction: column;
-    gap:40px;
+    gap:10px;
     padding: 20px;
-    position: absolute;
+    position: fixed;
     background-color:var(--primary-color-black);
-    top:105px;
-    left: 0px;
+    top:125px;
+    left: -300px;
     height: 50vh;
     border-radius: 0 5px 5px 0;
     border: 1px solid var(--primary-color-gold);
     border-left: none;
     font-size: var(--font-size-nav);
+    font-weight: 700;
+    transition: 0.3s ease;
+
+}
+.nav-menu.active{
+    left: 0;
+    
+}
+.hamburger-menu.active{
+    transform: rotate(360deg);
+    transition: 0.5s ease;
+
 }
 
 .nav-ul{
@@ -118,12 +131,6 @@ nav{
     padding: 25px;
 }
 
-nav, #menu-checkbox{
-    display: none;
-}
-#menu-checkbox:checked ~ nav{
-    display: inherit;
-}
 
 #logo{
     cursor: pointer;
@@ -136,30 +143,26 @@ nav, #menu-checkbox{
 }
 
  @media (min-width: 44rem){
-    nav{
-        display: contents;
-        background-color: var(--black);
-        font-size: var(--heading-size-normal);
-        position: static;
+    .nav-menu{
+        flex-direction: row;
+        padding: 0;
+        align-items: center;
+        position: sticky;
+        height: auto;
+        transition: none;
+        background: #000000;
         border: none;
-        height:auto;
-        margin: auto;
-       text-align: center;
     }
     .nav-ul{
        display: flex;
-       margin-right: 50px;
+       margin-right: 90px;
     }
-    
 
-    .hamburger-icon{
-        display: none;
-    }
     nav a, .cart-icon{
         transition-property: color;
         transition-duration: 0.3s;
     }
-    .fa-house, .fa-store, .fa-circle-info, .fa-square-phone{
+    .fa-house, .fa-store, .fa-circle-info, .fa-square-phone, .hamburger-menu{
         display: none  !important;
     }
     nav a:hover, .cart-icon:hover{
