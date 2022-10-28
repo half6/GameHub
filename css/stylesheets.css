@@ -179,7 +179,7 @@ header{
     row-gap: 40px;  
 }
 .game-card{
-    width: min(100%, 185px);
+    width: min(100%, 180px);
     background:var(--primary-color-black);
     border: 1.5px solid var(--primary-color-gold);
     border-radius: 5px;
@@ -214,13 +214,12 @@ header{
         margin: 10px 0px 0px 15px;
     }
 }
-@media (min-width: 48rem){
+@media (min-width: 50rem){
     .game-section{
         gap:10px;
-        flex-direction:row;
     }
     .game-card{
-        width: min(100%, 180px);
+        width: min(100%, 190px);
     }
     .game-card:hover{
         transform: translateY(-5px);
