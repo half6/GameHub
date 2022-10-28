@@ -207,7 +207,7 @@ header{
 
 @media (max-width: 390px){
     .game-card{
-    width: min(100%, 260px);
+    width: min(100%, 230px);
     }
     .game-title, .price{
         font-size: var(--font-size-mobile-small-screen);
