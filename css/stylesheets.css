@@ -452,7 +452,7 @@ fieldset label{
 }
 
 .like-container{
-    margin: 10px auto;
+    margin: 20px auto;
     padding: 20px;
     background-color: var(--primary-color-black);
     width: min(100%, 1200px);
@@ -467,7 +467,7 @@ fieldset label{
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
+    scrollbar-width: none;    
 }
 
 .like-container-wrapper::-webkit-scrollbar {
@@ -476,13 +476,10 @@ fieldset label{
 
   .like-container-wrapper div {
     flex-shrink: 0;
-    margin-bottom: 20px;
     width: min(100% - 1rem, 175px);
-   
-
 }
   .like-container-wrapper div img{
-    max-width: 120px;
+    max-width: 140px;
   }
    .like-container-wrapper div:hover{
     transform: none;
