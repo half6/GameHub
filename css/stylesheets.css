@@ -437,9 +437,7 @@ fieldset label{
 
 .recommended-section{
     background: var(--primary-color-black);
-    margin: 20px auto;
-  
-   
+    margin: 20px auto;  
 }
 
 .recommended-container{
