@@ -442,14 +442,17 @@ fieldset label{
 }
 
 .recommended-container{
+  
     margin: 20px auto;
     padding: 20px;
     background-color: var(--primary-color-black);
     width: min(100%, 1200px);
     display: flex;
     align-items: center;
-    
+   
 }
+
+
 .recommended-wrapper{
     display: flex;
     overflow-x: auto;
@@ -457,8 +460,11 @@ fieldset label{
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;    
+    scrollbar-width: none;
 }
+
+
+
 
 .recommended-wrapper::-webkit-scrollbar {
     display: none;
