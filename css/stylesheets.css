@@ -435,23 +435,13 @@ fieldset label{
     margin: 10px 0px;
 }
 
-
-
-
-
-
-
-
-
-
-
-.you-may-also-like-section{
+.recommended-section{
     background: var(--primary-color-black);
     margin: 20px auto;
 
 }
 
-.like-container{
+.recommended-container{
     margin: 20px auto;
     padding: 20px;
     background-color: var(--primary-color-black);
@@ -460,7 +450,7 @@ fieldset label{
     align-items: center;
     
 }
-.like-container-wrapper{
+.recommended-wrapper{
     display: flex;
     overflow-x: auto;
     gap:10px;
@@ -470,28 +460,28 @@ fieldset label{
     scrollbar-width: none;    
 }
 
-.like-container-wrapper::-webkit-scrollbar {
+.recommended-wrapper::-webkit-scrollbar {
     display: none;
 }
 
-  .like-container-wrapper div {
+ .recommended-game-card {
     flex-shrink: 0;
     width: min(100% - 1rem, 180px);
 }
-  .like-container-wrapper div img{
+  .recommended-game-card img{
     max-width: 130px;
   }
-   .like-container-wrapper div:hover{
-    transform: none;
-    box-shadow: none;
-}
-.like-container-wrapper div a{
+  .recommended-game-card a{
     padding: 7px;
     margin: 10px;
 }
-.like-container-wrapper div p{
+.recommended-game-card p{
     text-align: left;
     padding: 5px 10px
+}
+.recommended-game-card:hover{
+    transform: none;
+    box-shadow: none;
 }
 .arrow{
     display: none;
@@ -504,27 +494,6 @@ fieldset label{
         color:  var(--primary-color-gold);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (min-width: 40rem){
     .details-container{
         width: min(100%, 700px);
