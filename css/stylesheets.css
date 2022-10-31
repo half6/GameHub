@@ -144,7 +144,7 @@ header{
     color: var(--primary-color-gold);
 }
 
- @media (min-width: 49rem){
+ @media (min-width: 52rem){
     .nav-menu{
         flex-direction: row;
         padding: 0;
@@ -448,24 +448,22 @@ fieldset label{
     width: min(100%, 600px);
     display: flex;
     align-items: center;
-  
 }
 .recommended-wrapper{
     display: flex;
     overflow-x: auto;
-    gap:10px;
-    scroll-snap-type: x mandatory;
+    gap:12px;
     scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;  
+    
 }
 
  .recommended-game-card {
     flex-shrink: 0;
-    width: min(100% - 1rem, 180px);
+    width: min(100% - 1rem, 175px);
     margin-bottom: 20px;
 }
   .recommended-game-card img{
-    max-width: 130px;
+    max-width: 125px;
   }
   .recommended-game-card a{
     padding: 7px;
@@ -489,6 +487,12 @@ fieldset label{
     .recommended-container{
         width: min(100%, 900px);
     }
+    .recommended-game-card{
+        width: min(100% - 1rem, 180px);
+    }
+    .recommended-game-card img{
+        max-width: 130px;
+      }
     .arrow{
         display: inherit;
         padding: 10px;
