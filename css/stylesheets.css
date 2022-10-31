@@ -448,6 +448,17 @@ fieldset label{
     width: min(100%, 600px);
     display: flex;
     align-items: center;
+    position: relative;
+}
+.arrow{
+ position: absolute;
+ color: var(--primary-color-gold);
+}
+.arrow-left{
+    left: 0;
+}
+.arrow-right{
+    right: 0;
 }
 .recommended-wrapper{
     display: flex;
@@ -479,13 +490,11 @@ fieldset label{
     transform: none;
     box-shadow: none;
 }
-.arrow{
-    display: none;
-}
+
 
 @media (min-width: 52rem){
     .recommended-container{
-        width: min(100%, 900px);
+        width: min(100%, 800px);
     }
     .recommended-game-card{
         width: min(100% - 1rem, 180px);
@@ -493,12 +502,7 @@ fieldset label{
     .recommended-game-card img{
         max-width: 130px;
       }
-    .arrow{
-        display: inherit;
-        padding: 10px;
-        cursor: pointer;
-        color:  var(--primary-color-gold);
-    }
+
     .recommended-wrapper{
         scrollbar-width: none;
     }
