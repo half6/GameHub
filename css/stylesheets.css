@@ -438,41 +438,32 @@ fieldset label{
 .recommended-section{
     background: var(--primary-color-black);
     margin: 20px auto;
-
-}
-
-.recommended-container{
   
-    margin: 20px auto;
-    padding: 20px;
-    background-color: var(--primary-color-black);
-    width: min(100%, 1200px);
-    display: flex;
-    align-items: center;
    
 }
 
-
+.recommended-container{
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--primary-color-black);
+    width: min(100%, 1090px);
+    display: flex;
+    align-items: center;
+  
+}
 .recommended-wrapper{
     display: flex;
     overflow-x: auto;
     gap:10px;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-}
-
-
-
-
-.recommended-wrapper::-webkit-scrollbar {
-    display: none;
+    -webkit-overflow-scrolling: touch;  
 }
 
  .recommended-game-card {
     flex-shrink: 0;
     width: min(100% - 1rem, 180px);
+    margin-bottom: 20px;
 }
   .recommended-game-card img{
     max-width: 130px;
@@ -492,6 +483,7 @@ fieldset label{
 .arrow{
     display: none;
 }
+
 @media (min-width: 40rem){
     .arrow{
         display: inherit;
@@ -499,6 +491,13 @@ fieldset label{
         cursor: pointer;
         color:  var(--primary-color-gold);
     }
+    .recommended-wrapper{
+        scrollbar-width: none;
+    }
+    .recommended-wrapper::-webkit-scrollbar {
+        display: none;
+    }
+    
 }
 @media (min-width: 40rem){
     .details-container{
