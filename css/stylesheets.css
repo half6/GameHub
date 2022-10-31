@@ -396,6 +396,9 @@ fieldset label{
         }
     }
 /* Details */
+.product-details-section{
+    background: var(--primary-color-black);
+}
 .details-container{
     margin:0 auto;
     width: min(100%, 330px);
@@ -428,7 +431,62 @@ fieldset label{
 
 .main-info, .price-cta-container, .description, .secondary-info{
     margin: 10px 0px;
-}   
+}
+
+.you-may-also-like-section{
+    background: var(--primary-color-black);
+    margin: 20px auto;
+}
+
+.like-container{
+    margin: 10px auto;
+    padding: 20px;
+    background-color: var(--primary-color-black);
+    width: min(100%, 1200px);
+    display: flex;
+    align-items: center;
+}
+.like-container-wrapper{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: auto;
+
+}
+.like-container-wrapper::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+  .like-container-wrapper div {
+    flex-shrink: 0;
+    margin-right: 30px;
+    width: min(100% - 1rem, 170px);
+
+}
+  .like-container-wrapper div img{
+    max-width: 100px;
+  }
+   .like-container-wrapper div:hover{
+    transform: none;
+    box-shadow: none;
+}
+.like-container-wrapper div a{
+    padding: 5px;
+    margin: 10px 10px;
+}
+.arrow{
+    display: none;
+}
+@media (min-width: 40rem){
+    .arrow{
+        display: inherit;
+        padding: 10px;
+        cursor: pointer;
+        color:  var(--primary-color-gold);
+    }
+}
 
 
 @media (min-width: 40rem){
