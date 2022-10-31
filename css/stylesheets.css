@@ -36,6 +36,7 @@
     font-family: var(--main-font);
     color: white;
     font-size: 16px;
+    
   }
 body{
     display: flex;
@@ -43,6 +44,7 @@ body{
     gap:1rem;
     min-height: 100vh;
     width: 100%;
+ 
 }
 
 /* h1, h2, anchor, p elements and hr tag */
@@ -433,9 +435,20 @@ fieldset label{
     margin: 10px 0px;
 }
 
+
+
+
+
+
+
+
+
+
+
 .you-may-also-like-section{
     background: var(--primary-color-black);
     margin: 20px auto;
+
 }
 
 .like-container{
@@ -445,36 +458,43 @@ fieldset label{
     width: min(100%, 1200px);
     display: flex;
     align-items: center;
+    
 }
 .like-container-wrapper{
     display: flex;
     overflow-x: auto;
+    gap:20px;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    -webkit-overflow-scrolling: auto;
-
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
 }
+
 .like-container-wrapper::-webkit-scrollbar {
-    width: 0px;
-    height: 0px;
+    display: none;
 }
 
   .like-container-wrapper div {
     flex-shrink: 0;
-    margin-right: 30px;
-    width: min(100% - 1rem, 170px);
+    margin-bottom: 20px;
+    width: min(100% - 1rem, 175px);
+   
 
 }
   .like-container-wrapper div img{
-    max-width: 100px;
+    max-width: 120px;
   }
    .like-container-wrapper div:hover{
     transform: none;
     box-shadow: none;
 }
 .like-container-wrapper div a{
-    padding: 5px;
-    margin: 10px 10px;
+    padding: 7px;
+    margin: 10px;
+}
+.like-container-wrapper div p{
+    text-align: left;
+    padding: 5px 0px 5px 8px
 }
 .arrow{
     display: none;
@@ -487,6 +507,25 @@ fieldset label{
         color:  var(--primary-color-gold);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (min-width: 40rem){
