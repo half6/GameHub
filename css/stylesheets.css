@@ -463,7 +463,7 @@ fieldset label{
 .like-container-wrapper{
     display: flex;
     overflow-x: auto;
-    gap:20px;
+    gap:10px;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
@@ -476,10 +476,10 @@ fieldset label{
 
   .like-container-wrapper div {
     flex-shrink: 0;
-    width: min(100% - 1rem, 175px);
+    width: min(100% - 1rem, 180px);
 }
   .like-container-wrapper div img{
-    max-width: 140px;
+    max-width: 130px;
   }
    .like-container-wrapper div:hover{
     transform: none;
@@ -491,7 +491,7 @@ fieldset label{
 }
 .like-container-wrapper div p{
     text-align: left;
-    padding: 5px 0px 5px 8px
+    padding: 5px 10px
 }
 .arrow{
     display: none;
