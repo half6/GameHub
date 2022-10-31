@@ -445,7 +445,7 @@ fieldset label{
     margin: 20px auto;
     padding: 20px;
     background-color: var(--primary-color-black);
-    width: min(100%, 1090px);
+    width: min(100%, 600px);
     display: flex;
     align-items: center;
   
@@ -485,7 +485,10 @@ fieldset label{
     display: none;
 }
 
-@media (min-width: 40rem){
+@media (min-width: 52rem){
+    .recommended-container{
+        width: min(100%, 900px);
+    }
     .arrow{
         display: inherit;
         padding: 10px;
