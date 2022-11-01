@@ -358,7 +358,7 @@ fieldset label{
     line-height: 150%;
     background: var(--primary-color-black);
     padding: 5px 0;
-    width: min(100% - 2rem, 300px);
+    width: min(100% - 2rem, 300px); /* Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/min */
 }
 
 .fa-phone, .fa-envelope, .fa-location-dot{
