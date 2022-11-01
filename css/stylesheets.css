@@ -1,6 +1,6 @@
  /* body, html and variables */
  @font-face {
-    font-family: "Smack Laideth Down 2019";
+    font-family: "Smack Laideth Down 2019";    /* Reference: https://www.dafont.com/smack-laideth-down-2019.font */
     src: url("../fonts/Smack\ Laideth\ Down\ 2019.otf");
   }
   :root{
