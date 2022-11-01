@@ -105,8 +105,7 @@ header{
     
     display: flex;
     flex-direction: column;
-    gap:10px;
-    padding: 20px;
+    padding: 40px;
     justify-content: center;
     position: fixed;
     background-color:var(--primary-color-black);
@@ -133,7 +132,7 @@ header{
 }
 .nav-ul li{
     list-style-type: none;
-    padding: 25px;
+    padding: 30px;
 }
 #logo{
     cursor: pointer;
@@ -158,7 +157,6 @@ header{
     .nav-ul{
        display: flex;
        margin-right: 100px;
-       font-weight: 400;
     }
     nav a, .cart-icon{
         transition-property: color;
@@ -361,7 +359,6 @@ fieldset label{
     background: var(--primary-color-black);
     padding: 5px 0;
     width: min(100% - 2rem, 300px);
-    
 }
 
 .fa-phone, .fa-envelope, .fa-location-dot{
@@ -454,14 +451,14 @@ fieldset label{
  position: absolute;
  color: var(--primary-color-gold);
 }
-    .arrow-left{
-        left: 0;
+.arrow-left{
+     left: 0;
         
-    }
-    .arrow-right{
-        right: 0;
-    }
-
+}
+.arrow-right{
+    right: 0;
+}
+/* reference: https://css-tricks.com/can-get-pretty-far-making-slider-just-html-css/ */
 .recommended-wrapper{
     display: flex;
     overflow-x: auto;
@@ -474,6 +471,8 @@ fieldset label{
     width: min(100% - 1rem, 175px);
     margin-bottom: 20px;
 }
+/*                                      */
+
   .recommended-game-card img{
     max-width: 125px;
   }
