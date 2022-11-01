@@ -454,18 +454,19 @@ fieldset label{
  position: absolute;
  color: var(--primary-color-gold);
 }
-.arrow-left{
-    left: 0;
-}
-.arrow-right{
-    right: 0;
-}
+    .arrow-left{
+        left: 0;
+        
+    }
+    .arrow-right{
+        right: 0;
+    }
+
 .recommended-wrapper{
     display: flex;
     overflow-x: auto;
     gap:12px;
-    scroll-behavior: smooth;
-    
+    scroll-behavior: smooth; 
 }
 
  .recommended-game-card {
@@ -490,11 +491,13 @@ fieldset label{
     transform: none;
     box-shadow: none;
 }
-
+.desktop-arrow{
+    display: none;
+}
 
 @media (min-width: 52rem){
     .recommended-container{
-        width: min(100%, 800px);
+        width: min(100%, 840px); 
     }
     .recommended-game-card{
         width: min(100% - 1rem, 180px);
@@ -509,7 +512,14 @@ fieldset label{
     .recommended-wrapper::-webkit-scrollbar {
         display: none;
     }
-    
+    .desktop-arrow{
+        display: contents;
+        color: var(--primary-color-gold);
+       
+    }
+    .arrow{
+        display: none;
+    }
 }
 @media (min-width: 40rem){
     .details-container{
