@@ -328,6 +328,15 @@ fieldset{
     border-radius: 5px;
 }
 
+input,
+textarea{
+    border-radius: 5px;
+    margin: 10px 10px 10px 0px;
+    padding: 10px;
+}
+
+
+
 fieldset label{
     line-height: 1.5;
     padding-top: 5px;
@@ -342,7 +351,6 @@ fieldset label{
     display: flex;
     justify-content: center;
     gap:5px;
-    flex-direction: column;
     align-items: center; 
  
 }
@@ -353,7 +361,7 @@ fieldset label{
     line-height: 150%;
     background: var(--primary-color-black);
     padding: 5px 0;
-    width: min(100% - 2rem, 300px); /* Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/min */
+    width: min(100% - 2rem, 147.5px); /* Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/min */
 }
 
 .fa-phone, .fa-envelope, .fa-location-dot{
@@ -374,14 +382,15 @@ fieldset label{
     line-height: 150%;
     padding: 5px 0;
     }
-    @media(min-width:21rem){
-        .contact-info{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;    
-        }
+    @media(min-width:40rem){
         .email-info, .phone-info{
-            width: min(100% - 2rem, 147px);
+            width: min(100% - 2rem, 162.5px);
+        }
+        .contact-form{
+            width: min(100% - 2rem, 330px);
+        }
+        .location-info{
+            width: min(100% - 2rem, 330px);
         }
     }
 
@@ -635,10 +644,7 @@ fieldset label{
     gap:10px;
     max-width: 300px;
 }
-.month-year-cvc-container{
-    display: flex;
-    gap:5px;
-}
+
 .checkout-section h2, .total-text{
     font-family: var(--main-font);
     text-transform: uppercase;
