@@ -172,7 +172,8 @@ header{
     margin: 50px auto;
     flex-wrap: wrap;
     gap:8px;
-    row-gap: 40px;  
+    row-gap: 40px;
+
 }
 
 
@@ -376,6 +377,10 @@ fieldset label{
     @media(min-width:40rem){
         .textarea-field{
             height: 150px;
+        }
+
+        .email-info, .phone-info{
+            width: min(100% - 2rem, 170px);
         }
     }
     @media(min-width:21rem){
