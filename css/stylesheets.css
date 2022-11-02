@@ -556,6 +556,7 @@ fieldset label{
     max-width: 1000px;
     text-align: center;
     line-height: 1.5;
+    padding: 20px;
 }
 .cart-item{
     display: grid;
