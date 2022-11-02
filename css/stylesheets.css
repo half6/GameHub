@@ -327,16 +327,6 @@ fieldset{
     border: 1px solid var(--primary-color-gold);
     border-radius: 5px;
 }
-
-input,
-textarea{
-    border-radius: 5px;
-    margin: 10px 10px 10px 0px;
-    padding: 10px;
-}
-
-
-
 fieldset label{
     line-height: 1.5;
     padding-top: 5px;
@@ -641,10 +631,8 @@ fieldset label{
 .checkout-form{
     text-align: left;
     border:0;
-    gap:10px;
-    max-width: 300px;
+    gap:5px
 }
-
 .checkout-section h2, .total-text{
     font-family: var(--main-font);
     text-transform: uppercase;
