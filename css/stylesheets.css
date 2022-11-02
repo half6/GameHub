@@ -392,6 +392,7 @@ fieldset label{
 .product-details-section{
     background: var(--primary-color-black);
     margin: 20px auto;
+    max-width: 1400px;
      
 }
 .details-container{
@@ -431,7 +432,7 @@ fieldset label{
 .recommended-section{
     background: var(--primary-color-black);
     margin: 20px auto;
-   
+    max-width: 1400px;
 }
 
 .recommended-container{
@@ -556,7 +557,7 @@ fieldset label{
     max-width: 1000px;
     text-align: center;
     line-height: 1.5;
-    padding: 20px;
+    padding: 50px;
 }
 .cart-item{
     display: grid;
@@ -636,7 +637,14 @@ fieldset label{
 .checkout-form{
     text-align: left;
     border:0;
+    gap:10px;
+    max-width: 300px;
 }
+.month-year-cvc-container{
+    display: flex;
+    gap:5px;
+}
+
 .checkout-section h2, .total-text{
     font-family: var(--main-font);
     text-transform: uppercase;
@@ -646,7 +654,7 @@ fieldset label{
     padding: 20px;
     display: flex;
     justify-content: center;
-    gap:30px;
+    gap:90px;
     line-height: 1.5;
     text-align: left;
 }
