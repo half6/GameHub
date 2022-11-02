@@ -639,6 +639,11 @@ fieldset label{
 }
 
 /*Checkout */
+
+
+
+
+
 .checkout-form{
     text-align: left;
     border:0;
@@ -659,10 +664,12 @@ fieldset label{
     padding: 20px;
     display: flex;
     justify-content: center;
-    gap:90px;
+    gap:50px;
     line-height: 1.5;
     text-align: left;
 }
+
+
 /*success*/
 .checkout-page{
     background: var(--primary-color-black);
