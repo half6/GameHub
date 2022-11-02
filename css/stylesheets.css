@@ -44,6 +44,7 @@ body{
     width: 100%;
  
 }
+
 /* h1, h2, anchor, p elements and hr tag */
 h1, h2{
     font-family: var(--heading-font);
@@ -175,8 +176,6 @@ header{
     row-gap: 40px;
 
 }
-
-
 .game-card{
     width: min(100%, 180px);
     background:var(--primary-color-black);
@@ -227,6 +226,7 @@ header{
         box-shadow: 0px 4px 4px 1px var(--primary-color-gold);
     }
 }
+
 /*Buttons /CTA */
 .cta{
     text-align: center;
@@ -304,6 +304,7 @@ header{
         max-width:300px;
     }
 }
+
 /* Contact */
 form{
     display: flex;
@@ -393,6 +394,7 @@ fieldset label{
             width: min(100% - 2rem, 147px);
         }
     }
+
 /* Details */
 .product-details-section{
     background: var(--primary-color-black);
@@ -461,8 +463,7 @@ fieldset label{
 .arrow-right{
     right: 0;
 }
-/* reference: https://css-tricks.com/can-get-pretty-far-making-slider-just-html-css/ */
-.recommended-wrapper{
+.recommended-wrapper{ /* reference: https://css-tricks.com/can-get-pretty-far-making-slider-just-html-css/ */
     display: flex;
     overflow-x: auto;
     gap:12px;
@@ -474,8 +475,6 @@ fieldset label{
     width: min(100% - 1rem, 175px);
     margin-bottom: 20px;
 }
-/*                                      */
-
   .recommended-game-card img{
     max-width: 125px;
   }
@@ -555,6 +554,7 @@ fieldset label{
         grid-column: 1/3;
     }
 }
+
 /* cart */
 .cart-section, .checkout-section{
     background: var(--primary-color-black);
@@ -639,11 +639,6 @@ fieldset label{
 }
 
 /*Checkout */
-
-
-
-
-
 .checkout-form{
     text-align: left;
     border:0;
@@ -654,7 +649,6 @@ fieldset label{
     display: flex;
     gap:5px;
 }
-
 .checkout-section h2, .total-text{
     font-family: var(--main-font);
     text-transform: uppercase;
@@ -668,7 +662,6 @@ fieldset label{
     line-height: 1.5;
     text-align: left;
 }
-
 
 /*success*/
 .checkout-page{
@@ -687,6 +680,7 @@ fieldset label{
 .success-image, .text-wrapper{
     margin-bottom: 50px;
 }
+
 /* Footer */
 footer{
     width: auto;
