@@ -32,17 +32,27 @@
         <form>
             <fieldset class="contact-form" >
                 <h2>Contact us</h2>
-                <label for="name">Name</label>
-                <input type="text" required name="name" class="form-input" id="name">
-                <label for="email">Email</label>
-                <input type="email" required name="email" class="form-input" id="email">
-                <label for="phone">Phone number</label>
-                <input type="tel" required name="phone" class="form-input" id="phone">
-                <label for="subject">Subject</label>
-                <input type="text" required name="subject" class="form-input" id="subject">
-                <label for="message-area">Message</label>
-                <textarea required name="message" class="form-input textarea-field" id="message-area"></textarea>
-                <button class="cta cta-large">Send</button>
+                <div class="input-container">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" required>
+                </div>
+                <div class="input-container">
+                    <label for="email">Email</label>
+                    <input type="email" name="name" required>
+                </div>
+                <div class="input-container">
+                    <label for ="cc">Phone number</label>
+                    <input type="tel" name="cc" required>
+                </div>
+                    <div class="input-container">
+                        <label for="month-year">Subject</label>
+                        <input type="number" name="month-year" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="message">Message</label>
+                        <textarea name="message" required></textarea>
+                    </div>
+                <button class="cta">SEND</button>
             </fieldset>
         </form>
         <div class="contact-info">

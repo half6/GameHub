@@ -273,7 +273,13 @@ header{
 .cta:active, #logo:active{
     transform: scale(0.99);
 }
-
+.contact-form button{
+    margin: 0;
+}
+.paypal{
+    background: white;
+    color: #00457C;
+}
 /* About */
 .about-section{
     display: flex;
@@ -306,35 +312,27 @@ header{
 }
 
 /* Contact */
-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-.form-input{
-    padding: 5px;
-}
 .contact-form{
+    margin: 5px auto;
     display: flex;
     flex-direction: column;
     width: min(100% - 2rem, 300px);
-    margin-inline:auto;
-    margin-bottom: 5px;
-    padding: 0px 10px 10px 10px;
+    padding: 15px;
     line-height: 150%;
     background-color: var(--primary-color-black);
     border: 1px solid var(--primary-color-gold);
     border-radius: 5px;
 }
-fieldset label{
-    line-height: 1.5;
-    padding: 5px 0;
-   
+
+.contact-form label{
+    margin: 0.3rem 0;
 }
-.textarea-field{
+
+.input-container textarea{
     height: 110px;
     font-size: var(--font-size-normal);
+    padding: 5px;
 }
 
 .contact-info{
@@ -631,33 +629,26 @@ fieldset label{
 }
 }
 
-
-
 /*Checkout */
 .checkout-form{
     display: flex;
-    flex-direction: column;
-    width: min(100% - 1rem, 300px);
     margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    width: min(100% - 1rem, 300px);
     border:1.5px solid #BE9C37;
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 15px;
 }
 .input-container{
     display: flex;
-    align-items: flex-start;
+    text-align: left;
     flex-direction: column;
     margin-bottom: 1rem;
     width: 100%;
 }
-.input-container input{
-    padding: 5px;
-    width: 100%;
- 
-
-}
 .checkout-form label{
-    margin-bottom: 0.5rem;
+    margin: 0.5rem 0;
 }
 .month-year-container{
     display: flex;
@@ -665,26 +656,10 @@ fieldset label{
     align-items: center;
     gap: 5px;
 }
-.month-year-container .inputs input{
-    width: 100%;
-}
-
-.paypal{
-    background: white;
-    color: #00457C;
-}
-
-
-.buy-now, .paypal {
+.buy-now, .paypal, .input-container input {
     width: 100%;
     padding: 5px;
 }
-
-
-
-
-
-
 
 .checkout-section h2, .total-text{
     font-family: var(--main-font);
