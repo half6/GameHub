@@ -1,55 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
+
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel ="stylesheet" href="css/stylesheets.css">
+    <meta name="description" content="Details about selected game">
+    <title>GameHub || game details</title>
+    <link rel="stylesheet" href="css/stylesheets.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/7cc6ea881f.js" crossorigin="anonymous"></script> 
+    <script src="https://kit.fontawesome.com/7cc6ea881f.js" crossorigin="anonymous"></script>
+    
 </head>
+
 <body>
     <header>
-        <input type="checkbox" id="menu-checkbox" />
-        <label for="menu-checkbox" class="hamburger-icon"><i class="fa-solid fa-bars fa-xl"></i></label>
-        <a href="index.html"><img id="logo" src="images/gamehub.png" alt="logo"></a>
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="store.html">Store</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
+        <i class="fa-solid fa-bars fa-xl hamburger-menu"></i>
+        <a href="index.html" aria-label="company logo, also works as home button"><img id="logo"
+                src="images/gamehublogo.png" alt="logo"></a>
+        <nav class="nav-menu">
+            <ul class="nav-ul">
+                <li><a href="index.html"><i class="fa-solid fa-house mobile-logo"></i> Home</a></li>
+                <li><a href="store.html"><i class="fa-solid fa-store mobile-logo"></i> Store</a></li>
+                <li><a href="about.html"><i class="fa-solid fa-circle-info mobile-logo"></i> About</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-square-phone mobile-logo"></i> Contact</a></li>
+            </ul>
         </nav>
-        <a href="cart.html" id="cart-icon"><i class="fa-solid fa-cart-shopping fa-xl cart-icon"></i></a>
-      </header>
+
+        <a href="cart.html" id="cart-icon" aria-label="link to shopping cart"><i
+                class="fa-solid fa-cart-shopping fa-xl cart-icon"></i></a>
+   
+    </header>
     <main>
-        <section class="details-section">
-            <div class="details-container">
-                <img src="images/GameHub_covers10.jpg" class="details-img">
-                <h3>Forge Legend</h3>
-                <p>Forge your legend against all odds.</p>
-                <p>Inspired by Eldenring this MMO is sure to give gamers a serious challenge</p>
-                <h3>4K UDHR</h3>
-                <p>Forge your legend in 4k!</p>
-                <p>this game is one of the first titles to be fully optimized for 4K</p>
+        <section class="product-details-section">
+            <h2>Product Details</h2>
+            <div class="details-container"> 
+                <div class="details-img-container">
+                    <img src="images/GameHub_covers10_300x.jpg" class="img" alt="game-cover-forge-legend">
                 </div>
-            <a href="cart.html" class="btn">Add to cart</a>
-        </section>
+                <article class="main-info">
+                    <h3>Forge Legend</h3>
+                    <p>Playbox</p>
+                    <p>Released 02/21</p>
+                </article>
+                <div class="product-details-info">
+                    <p class="product-details-price">$35</p>
+                    <a href="cart.html" class="cta add-to-cart-cta">Add to cart</a>
+                    <p class="product-details-digital-info">All games are sold as digital copies</p>
+                </div>
+                <article class="description">
+                    <h3>Description</h3>
+                    <p>Forge your legend against all odds.
+                        Inspired by Eldenring this MMO is sure to give gamers a serious challenge.
+                    </p>
+                 </article>
+                 <article class="secondary-info">
+                    <h3>4K UDHR</h3>
+                    <p>Forge your legend in 4k!
+                    this game is one of the first titles to be fully optimized for 4K.
+                    </p>
+                </article>  
+  
+                </div>
+            </section>
+                <section class="recommended-section">
+                    <h2>You may also like</h2>
+                    <div class="recommended-container">
+                       <a class="desktop-arrow desktop-arrow-left" href="#2"><i class="fa-solid fa-angle-left fa-2xl"></i></a>
+                       <a class="arrow arrow-left"><i class="fa-solid fa-chevron-left fa-lg"></i></a>
+                        
+                        <div class="recommended-wrapper">
+                            <div class="game-card recommended-game-card" id="2">
+                                <img class="game-cover-img" src="images/black.jpg" alt="game-cover-black">
+                                <p class="game-title">Black</p>
+                                <p class="price">$ 35</p>
+                                <a class="cta cta-small" href="details.html">Details</a>
+                            </div>
+                            <div class="game-card recommended-game-card" id="3">
+                                <img class="game-cover-img" src="images/spacewar.jpg" alt="game-cover-space-war">
+                                <p class="game-title">Space War</p>
+                                <p class="price">$ 25</p>
+                                <a class="cta cta-small" href="details.html">Details</a>
+                            </div>
+                            <div class="game-card recommended-game-card" id="4">
+                                <img class="game-cover-img" src="images/racing.jpg" alt="game-cover-racing">
+                                <p class="game-title">Racing</p>
+                                <p class="price">$ 25</p>
+                                <a class="cta cta-small" href="details.html">Details</a>
+                            </div>
+                            <div class="game-card recommended-game-card" id="5">
+                                <img class="game-cover-img" src="images/cyberpunk.jpg" alt="game-cover-cyberpunk">
+                                <p class="game-title">Cyberpunk</p>
+                                <p class="price">$ 35</p>
+                                <a class="cta cta-small" href="details.html">Details</a>
+                            </div>
+                            <div class="game-card recommended-game-card" id="6">
+                                <img class="game-cover-img" src="images/furious.jpg" alt="game-cover-furious">
+                                <p class="game-title">Furious</p>
+                                <p class="price">$ 35</p>
+                                <a class="cta cta-small" href="details.html">Details</a>
+                            </div>
+         
+                            <div class="game-card recommended-game-card" id="8">
+                                <img class="game-cover-img" src="images/boxer.jpg" alt="game-cover-boxer">
+                                <p class="game-title">Boxer</p>
+                                <p class="price">$ 25</p>
+                                <a class="cta cta-small" href="details.html">Details</a>
+                            </div>
+
+                            <div class="game-card recommended-game-card" id="10">
+                                <img class="game-cover-img" src="images/assassin.jpg" alt="game-cover-assassin">
+                                <p class="game-title">Assassin</p>
+                                <p class="price">$ 25</p>
+                                <a class="cta cta-small" href="details.html">Details</a>
+                            </div>
+                      
+                        </div>
+                        <a class="arrow arrow-right"><i class="fa-solid fa-chevron-right fa-lg"></i></a>
+                        <a class="desktop-arrow desktop-arrow-right" href="#10"><i class="fa-solid fa-angle-right fa-2xl"></i></a>
+                    </div>
+        
+                </section>
+
     </main>
     <footer>
-        <ul class="socials">
-            <p id="connected">Stay connected</p>
-            <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook fa-xl"></i></a></li>
-            <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
+        <ul class="social-media-links" aria-label="social media links">
+            <li><a href="https://www.facebook.com/" target="_blank" aria-label="facebook"><i
+                        class="fa-brands fa-square-facebook fa-xl"></i></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank" aria-label="instagram"><i
+                        class="fa-brands fa-instagram fa-xl"></i></a>
             </li>
-            <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube fa-xl"></i></a></li>
+            <li><a href="https://www.youtube.com/" target="_blank" aria-label="youtube"><i
+                        class="fa-brands fa-youtube fa-xl"></i></a></li>
         </ul>
         <p class="copyright">Copyright Ⓒ Game Hub: 2022: All rights reserved</p>
         <address class="address">
-            <p>Address</p> 
+            <p>Address</p>
             <p>TheAddress25</p>
             <p>0255 Oslo</p>
-            </address>
         </address>
     </footer>
- </body>
+    <script src="js/details.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+

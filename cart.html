@@ -1,66 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
+
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel ="stylesheet" href="css/stylesheets.css">
+    <meta name="description" content="your shopping cart">
+    <title>GameHub || Cart</title>
+    <link rel="stylesheet" href="css/stylesheets.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/7cc6ea881f.js" crossorigin="anonymous"></script> 
+    <script src="https://kit.fontawesome.com/7cc6ea881f.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
-        <input type="checkbox" id="menu-checkbox" />
-        <label for="menu-checkbox" class="hamburger-icon"><i class="fa-solid fa-bars fa-xl"></i></label>
-        <a href="index.html"><img id="logo" src="images/gamehub.png" alt="logo"></a>
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="store.html">Store</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
+        <i class="fa-solid fa-bars fa-xl hamburger-menu"></i>
+        <a href="index.html" aria-label="company logo, also works as home button"><img id="logo"
+                src="images/gamehublogo.png" alt="logo"></a>
+        <nav class="nav-menu">
+            <ul class="nav-ul">
+                <li><a href="index.html"><i class="fa-solid fa-house mobile-logo"></i> Home</a></li>
+                <li><a href="store.html"><i class="fa-solid fa-store mobile-logo"></i> Store</a></li>
+                <li><a href="about.html"><i class="fa-solid fa-circle-info mobile-logo"></i> About</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-square-phone mobile-logo"></i> Contact</a></li>
+            </ul>
         </nav>
-        <a href="cart.html" id="cart-icon"><i class="fa-solid fa-cart-shopping fa-xl cart-icon active"></i></a>
-      </header>
+
+        <a href="cart.html" id="cart-icon" aria-label="link to shopping cart"><i
+                class="fa-solid fa-cart-shopping fa-xl cart-icon active-page"></i></a>
+   
+    </header>
     <main>
         <section class="cart-section">
-            <div class="cart-container">
-                <img src="images/GameHub_covers10.jpg" class="cart-img">
-                <section class="summary-section">
-                    <div class="summary-text">
-                        <p>Forge Legend</p>
-                        <p>Estimated Shipping</p>
-                        <p>Estimated Tax</p>
-                        <p id="total-text">Total</p>
-                    </div>
-                    <div class="summary-text-price">
-                        <p>$35</p>
-                        <p>$0</p>
-                        <p>$0</p>
-                        <p id="total-text">$35</p>
-                    </div>
-                </section>
+            <h1 class="cart-title">Your Cart</h1>
+            <div class="cart-item">
+                <div class=product-info>
+                    <div class="product-info-wrapper">
+                        <div class="cart-img-container">
+                            <img src="images/forgelegend.jpg" class="img" alt="game-cover">
+                        </div>
+                        <div class="product-wrapper-text">
+                            <p>Forge Legend</p>
+                            <p>Playbox</p>
+                        </div>
+                    </div>  
+                </div>
+                <div class="amount">
+                    <h2>Amount</h2>
+                    <input type="number" class="cart-input">
+                </div>
+                <div class="item-price">
+                    <h2>Price</h2>
+                    <p>$35</p>
+                </div>
+                <div class="total-cost">
+                    <h2>Total</h2>
+                    <p>$35</p>
+                </div>
             </div>
-            <a href="checkout.html" class="btn">Checkout</a>
+          
         </section>
- </div>
-</main>
-<footer>
-    <ul class="socials">
-        <p id="connected">Stay connected</p>
-        <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook fa-xl"></i></a></li>
-        <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
-        </li>
-        <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube fa-xl"></i></a></li>
-    </ul>
-    <p class="copyright">Copyright Ⓒ Game Hub: 2022: All rights reserved</p>
-    <address class="address">
-        <p>Address</p> 
-        <p>TheAddress25</p>
-        <p>0255 Oslo</p>
+        <section class="checkout-section">
+            <h2>Summary</h2>
+            <div class="summary-wrapper">
+                <div class="summary-text">
+                    <p>Subtotal</p>
+                    <p>Shipping</p>
+                    <p>Tax</p>
+                    <p class="total-text">Total</p>
+                </div>
+                <div class="summary-text-price">
+                    <p>$35</p>
+                    <p>$0</p>
+                    <p>$0</p>
+                    <p class="total-text">$35</p>
+                </div>
+            </div>
+            <form class="checkout-form">
+                <div class="input-container">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" required>
+                </div>
+                <div class="input-container">
+                    <label for="email">Email</label>
+                    <input type="email" name="name" required>
+                </div>
+                <div class="input-container">
+                    <label for ="cc">CC Number</label>
+                    <input type="number" name="cc" required>
+                </div>
+                <div class="month-year-container">
+                    <div class="input-container">
+                        <label for="month-year">Month / Year</label>
+                        <input type="number" name="month-year" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="cvc">CVC</label>
+                        <input type="number" name="number" required>
+                    </div>
+                </div>
+                <a  href="checkout-success.html" class="cta buy-now">BUY NOW</a>
+                <a  href="checkout-success.html" class="cta paypal">PayPal</a>            
+            </form>
+        </section>
+        
+    </main>
+    <footer>
+        <ul class="social-media-links" aria-label="social media links">
+            <li><a href="https://www.facebook.com/" target="_blank" aria-label="facebook"><i
+                        class="fa-brands fa-square-facebook fa-xl"></i></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank" aria-label="instagram"><i
+                        class="fa-brands fa-instagram fa-xl"></i></a>
+            </li>
+            <li><a href="https://www.youtube.com/" target="_blank" aria-label="youtube"><i
+                        class="fa-brands fa-youtube fa-xl"></i></a></li>
+        </ul>
+        <p class="copyright">Copyright Ⓒ Game Hub: 2022: All rights reserved</p>
+        <address class="address">
+            <p>Address</p>
+            <p>TheAddress25</p>
+            <p>0255 Oslo</p>
         </address>
-    </address>
-</footer>
+    </footer>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
- </body>
