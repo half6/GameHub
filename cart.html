@@ -65,8 +65,8 @@
             <div class="summary-wrapper">
                 <div class="summary-text">
                     <p>Subtotal</p>
-                    <p>Estimated Shipping</p>
-                    <p>Estimated Tax</p>
+                    <p>Shipping</p>
+                    <p>Tax</p>
                     <p class="total-text">Total</p>
                 </div>
                 <div class="summary-text-price">
@@ -76,17 +76,31 @@
                     <p class="total-text">$35</p>
                 </div>
             </div>
-            <form>
-                <fieldset class="checkout-form">
+            <form class="checkout-form">
+                <div class="input-container">
                     <label for="name">Name</label>
-                    <input type="text" id="name" required name="name" class="form-input checkout-input">
+                    <input type="text" name="name">
+                </div>
+                <div class="input-container">
                     <label for="email">Email</label>
-                    <input type="email" id="email" required name="email" class="form-input checkout-input">
-                    <label for="cc">CC</label>
-                    <input type="number" id="cc" required name="css" class="form-input checkout-input">
-                    <a class="cta cta-large checkout-cta" href="checkout-success.html">Buy Now</a>
-                    <a class="cta cta-large checkout-paypal checkout-cta" href="checkout-success.html">PayPal</a>
-                </fieldset>
+                    <input type="email" name="name">
+                </div>
+                <div class="input-container">
+                    <label for ="cc">CC Number</label>
+                    <input type="number" name="cc">
+                </div>
+                <div class="month-year-container">
+                    <div class="input-container">
+                        <label for="month-year">Month / Year</label>
+                        <input type="number" name="month-year">
+                    </div>
+                    <div class="input-container">
+                        <label for="cvc">CVC</label>
+                        <input type="number" name="number">
+                    </div>
+                </div>
+                <a  href="checkout-success.html" class="cta buy-now">BUY NOW</a>
+                <a  href="checkout-success.html" class="cta paypal">PayPal</a>            
             </form>
         </section>
         

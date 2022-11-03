@@ -315,7 +315,7 @@ form{
 .form-input{
     padding: 5px;
 }
-fieldset{
+.contact-form{
     display: flex;
     flex-direction: column;
     width: min(100% - 2rem, 300px);
@@ -329,8 +329,8 @@ fieldset{
 }
 fieldset label{
     line-height: 1.5;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px 0;
+   
 }
 .textarea-field{
     height: 110px;
@@ -547,11 +547,14 @@ fieldset label{
 /* cart */
 .cart-section, .checkout-section{
     background: var(--primary-color-black);
-    margin: 10px auto;
+    margin: 0 auto;
     max-width: 1000px;
     text-align: center;
     line-height: 1.5;
     padding: 50px;
+}
+.checkout-section{
+    border-top: 1px solid var(--primary-color-gold);
 }
 .cart-item{
     display: grid;
@@ -577,6 +580,7 @@ fieldset label{
     text-align: left;
     gap: 10px;
     align-items: center;
+    
 }
 .cart-input{
     max-width: 50px;
@@ -585,7 +589,7 @@ fieldset label{
     border:none;
 }
 .product-info{
-    grid-column: 2/4;
+    grid-column: 2/5;
 }
 
 .amount{
@@ -627,12 +631,61 @@ fieldset label{
 }
 }
 
+
+
 /*Checkout */
 .checkout-form{
-    text-align: left;
-    border:0;
-    gap:5px
+    display: flex;
+    flex-direction: column;
+    width: min(100% - 1rem, 300px);
+    margin: 0 auto;
+    border:1.5px solid #BE9C37;
+    border-radius: 3px;
+    padding: 15px;
 }
+.input-container{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+.input-container input{
+    padding: 5px;
+    width: 100%;
+ 
+
+}
+.checkout-form label{
+    margin-bottom: 0.5rem;
+}
+.month-year-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+.month-year-container .inputs input{
+    width: 100%;
+}
+
+.paypal{
+    background: white;
+    color: #00457C;
+}
+
+
+.buy-now, .paypal {
+    width: 100%;
+    padding: 5px;
+}
+
+
+
+
+
+
+
 .checkout-section h2, .total-text{
     font-family: var(--main-font);
     text-transform: uppercase;
@@ -642,7 +695,7 @@ fieldset label{
     padding: 20px;
     display: flex;
     justify-content: center;
-    gap:50px;
+    gap:100px;
     line-height: 1.5;
     text-align: left;
 }
