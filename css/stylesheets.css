@@ -4,7 +4,7 @@
     src: url("../fonts/Smack\ Laideth\ Down\ 2019.otf");
   }
   :root{
-    --primary-color-gold: #BE9C37;
+    --primary-color-gold: #BE9C37; /* Reference: https://color.adobe.com/ */
     --primary-color-black:#0C1014;
     --black:#000000;
 
@@ -74,7 +74,7 @@ hr{
     margin: auto;
     border: none;
     height: 5px;
-    background: radial-gradient(50% 50% at 50% 50%, var(--primary-color-gold) 0%, rgba(152, 117, 28, 0) 100%);
+    background: radial-gradient(50% 50% at 50% 50%, var(--primary-color-gold) 0%, rgba(152, 117, 28, 0) 100%); /* Reference: Figma */
 }
 
 @media(min-width:40rem){
@@ -106,7 +106,7 @@ header{
     position: fixed;
     background-color:var(--primary-color-black);
     top: 118px;
-    left: -300px;
+    left: -100%;
     height: 50vh;
     border-radius: 0 5px 5px 0;
     border: 1px solid var(--primary-color-gold);
