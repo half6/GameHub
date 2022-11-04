@@ -8,11 +8,4 @@ Game Hub is targeted audience are people in the age from 18 to 25.
 
 Slogan: The universe of games
 
-The site architecture are as follows:
--Home
--List of games
--Product details
--Checkout
--Checkout success
--About
--Contact
+The site architecture are as follows:Home, List of games, Product details, Checkout, Checkout success, About, Contact.
