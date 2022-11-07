@@ -443,13 +443,16 @@ header{
 .arrow{
  position: absolute;
  color: var(--primary-color-gold);
+ padding: 10px;
 }
 .arrow-left{
      left: 0;
+     padding: 6px;
         
 }
 .arrow-right{
     right: 0;
+    padding: 6px;
 }
 .recommended-wrapper{ /* reference: https://css-tricks.com/can-get-pretty-far-making-slider-just-html-css/ */
     display: flex;
