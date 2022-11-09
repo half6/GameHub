@@ -129,6 +129,13 @@ header{
 .nav-ul li{
     list-style-type: none;
     padding: 30px;
+    
+}
+@media (orientation: landscape) and (max-width: 47rem){
+    .nav-ul li{
+        padding: 11px;
+        font-size: 0.8rem;
+    }
 }
 #logo{
     cursor: pointer;
