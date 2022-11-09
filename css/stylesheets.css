@@ -74,7 +74,7 @@ hr{
     margin: auto;
     border: none;
     height: 5px;
-    background: radial-gradient(50% 50% at 50% 50%, var(--primary-color-gold) 0%, rgba(152, 117, 28, 0) 100%); /* Reference: Figma */
+    background: radial-gradient(50% 50% at 50% 50%, var(--primary-color-gold) 0%, rgba(152, 117, 28, 0) 100%); /* Reference: Figma assignment */
 }
 
 @media(min-width:40rem){
