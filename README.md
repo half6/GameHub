@@ -16,7 +16,7 @@ The site architecture are as follows<br>
 - Home 
 - List of games 
 - Product details 
-- Checkout 
+- Cart / Checkout 
 - Checkout success 
 - About
 - Contact
