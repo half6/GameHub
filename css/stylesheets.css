@@ -27,6 +27,7 @@
     padding: 0;                
     margin: 0; 
  }
+ 
  html { 
     background: url(../images/darkprem23.jpg) no-repeat center fixed;  /* Reference: https://www.freepik.com/ */
     background-size: cover;
